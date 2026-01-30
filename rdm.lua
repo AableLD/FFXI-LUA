@@ -1,0 +1,574 @@
+function get_sets()
+    mote_include_version = 2
+
+    -- Load and initialize the include file.
+    include('Mote-Include.lua')
+end
+
+function job_setup()
+
+end
+
+function user_setup()
+    select_default_macro_book()
+    set_lockstyle()
+	state.WeaponLock = M(false, 'WeaponLocked')
+	send_command('bind F10 gs c cycle WeaponLock')
+
+end
+
+
+function init_gear_sets()
+
+ sets.idle = {
+      main="Daybreak",
+      sub="Archduke's Shield",
+      ammo="Homiliary",
+      head="Viti. Chapeau +4",
+      body="Lethargy Sayon +2",
+      hands="Nyame Gauntlets",
+      legs="Nyame Flanchard",
+      feet="Nyame Sollerets",
+      neck={ name="Dls. Torque +1", augments={'Path: A',}},
+      waist="Null Belt",
+      left_ear="Alabaster Earring",
+      right_ear="Infused Earring",
+      left_ring="Murky Ring",
+        right_ring="Shneddick Ring",
+        back="Null Shawl",
+    }
+
+    sets.precast.FC = {
+        main="Daybreak",
+        sub="Archduke's Shield",
+        ammo="Sapience Orb",
+        head="Atro. Chapeau +4",
+        body="Viti. Tabard +3",
+        hands="Leth. Ganth. +2",
+        legs="Atrophy Tights +3",
+        feet="Vitiation Boots +4",
+        neck="Voltsurge Torque",
+        waist="Embla Sash",
+        left_ear="Alabaster Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back="Sucellos's Cape",
+    }
+	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {body="Crepuscular Cloak"})
+
+
+sets.midcast.Utsusemi = {
+        main="Sakpata's Sword",
+        sub="Archduke's Shield",
+        ammo="Sapience Orb",
+        head="Atro. Chapeau +4",
+        body="Viti. Tabard +3",
+        hands="Leth. Ganth. +2",
+        legs="Atrophy Tights +3",
+        feet="Vitiation Boots +4",
+        neck="Voltsurge Torque",
+        waist="Embla Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back="Sucellos's Cape",
+    }
+
+ sets.midcast["Utsusemi: Ni"] = sets.midcast.Utsusemi
+sets.midcast["Utsusemi: Ichi"] = sets.midcast.Utsusemi
+sets.midcast["Raise"] = sets.midcast.Utsusemi
+sets.midcast["Raise II"] = sets.midcast.Utsusemi
+sets.midcast["Reraise II"] = sets.midcast.Utsusemi
+sets.midcast["Reraise II"] = sets.midcast.Utsusemi
+
+    sets.midcast.Stoneskin = {
+        main="Daybreak",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head="Atro. Chapeau +4",
+        body="Viti. Tabard +3",
+        hands="Atro. Gloves +4",
+        legs="Shedir Seraweels",
+        feet="Leth. Houseaux +2",
+        neck="Stone Gorget",
+        waist="Siegel Sash",
+        left_ear="Earthcry Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Kishar Ring",
+        right_ring="Defending Ring",
+        back="Sucellos's Cape",
+    }
+
+sets.engaged = {
+ammo="Coiste Bodhar",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Null Loop",
+    waist="Sailfi Belt +1",
+    left_ear="Sherida Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Murky Ring",
+    right_ring="Ilabrat Ring",
+    back="Null Shawl",
+}
+
+sets.precast.WS["Death Blossom"] = {
+ammo="Coiste Bodhar",
+    head="Viti. Chapeau +4",
+    body="Nyame Mail",
+    hands="Malignance Gloves",
+    legs="Nyame Flanchard",
+    feet="Leth. Houseaux +2",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Sherida Earring",
+    right_ear="Moonshade Earring",
+    left_ring="Ephramad's Ring",
+    right_ring="Metamor. Ring +1",
+    back="Sucellos's Cape",
+}
+
+sets.precast.WS["Chant du Cygne"] = {
+ammo="Coiste Bodhar",
+    head="Viti. Chapeau +4",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Foita Gorget",
+    waist="Fotia Belt",
+    left_ear="Sherida Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Ilabrat Ring",
+    back="Null Shawl",
+}
+
+sets.precast.WS["Evisceration"] = {
+ammo="Coiste Bodhar",
+    head="Viti. Chapeau +4",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Foita Gorget",
+    waist="Fotia Belt",
+    left_ear="Sherida Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Ilabrat Ring",
+    back="Null Shawl",
+}
+
+sets.precast.WS["Savage Blade"] = {
+    ammo="Coiste Bodhar",
+    head="Viti. Chapeau +4",
+    body="Nyame Mail",
+    hands="Atro. Gloves +4",
+    legs="Nyame Flanchard",
+    feet="Leth. Houseaux +2",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Sherida Earring",
+    right_ear="Moonshade Earring",
+    left_ring="Ephramad's Ring",
+    right_ring="Ilabrat Ring",
+    back="Null Shawl",
+}
+
+sets.precast.WS["Black Halo"] = {
+    ammo="Coiste Bodhar",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Atro. Gloves +4",
+    legs="Nyame Flanchard",
+    feet="Leth. Houseaux +2",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Regal Earring",
+    right_ear="Moonshade Earring",
+    left_ring="Ephramad's Ring",
+    right_ring="Ilabrat Ring",
+    back="Sucellos's Cape",
+}
+
+sets.precast.WS["Seraph Blade"] = {
+    ammo="Ghastly Tathlum +1",
+    head="Leth. Chappel +2",
+    body="Nyame Mail",
+    hands="Leth. Ganth. +2",
+    legs="Nyame Flanchard",
+    feet="Leth. Houseaux +2",
+    neck="Fotia Gorget",
+        waist="Eschan Stone",
+ left_ear="Moonshade Earring",
+        right_ear="Malignance Earring",
+    left_ring="Murky Ring",
+        right_ring="Metamor. Ring +1",
+    back="Sucellos's Cape",
+}
+
+sets.precast.WS["Sanguine Blade"] = {
+    ammo="Ghastly Tathlum +1",
+    head="Pixie Hairpin +1",
+    body="Nyame Mail",
+    hands="Atro. Gloves +4",
+    legs="Leth Fuseau +2",
+    feet="Leth. Houseaux +2",
+    neck="Baetyl Pendant",
+        waist="Eschan Stone",
+ left_ear="Regal Earring",
+        right_ear="Malignance Earring",
+    left_ring="Archon Ring",
+    right_ring="Metamor. Ring +1",
+    back="Sucellos's Cape",
+}
+
+
+sets.precast.WS["Knights of Round"]
+ = {
+    ammo="Coiste Bodhar",
+    head="Viti. Chapeau +4",
+    body="Nyame Mail",
+    hands="Atro. Gloves +4",
+    legs="Nyame Flanchard",
+    feet="Leth. Houseaux +2",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Sherida Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Ilabrat Ring",
+    back="Sucellos's Cape",
+}
+
+
+
+    sets.midcast.Gravity = {
+        main="Daybreak",
+        sub="Archduke's Shield",
+        ammo="Regal Gem",
+        head="Viti. Chapeau +4",
+        body="Lethargy Sayon +2",
+        hands="Leth. Ganth. +2",
+        legs="Atrophy Tights +3",
+        feet="Vitiation Boots +4",
+        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        waist="Obstin. Sash",
+        left_ear="Malignance Earring",
+        right_ear="Snotra Earring",
+	left_ring="Murky Ring",
+        right_ring="Metamor. Ring +1",
+        back="Sucellos's Cape",
+
+
+	
+    }
+sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
+
+    sets.midcast["Gravity II"] = sets.midcast.Gravity
+    sets.midcast["Gravity"] = sets.midcast.Gravity
+
+
+    sets.midcast.EnfeeblingMagic = {
+        main="Daybreak",
+        sub="Ammurapi Shield",
+        ammo="Regal Gem",
+        head="Vitiation Chapeau +4",
+        body="Atrophy Tabard +4",
+        hands="Leth. Ganth. +2",
+        legs="Atrophy Tights +3",
+        feet="Vitiation Boots +4",
+        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        waist="Obstin. Sash",
+        left_ear="Regal Earring",
+        right_ear="Snotra Earring",
+	left_ring="Kishar Ring",
+        right_ring="Metamor. Ring +1",
+        back="Sucellos's Cape",
+    }
+
+
+    sets.midcast.Bind = sets.midcast.EnfeeblingMagic
+    sets.midcast.Slow = sets.midcast.EnfeeblingMagic
+    sets.midcast["Slow II"] = sets.midcast.EnfeeblingMagic
+    sets.midcast.Paralyze = sets.midcast.EnfeeblingMagic
+    sets.midcast["Paralyze II"] = sets.midcast.EnfeeblingMagic
+    sets.midcast.Silence = sets.midcast.EnfeeblingMagic
+    sets.midcast.Sleep = sets.midcast.EnfeeblingMagic
+    sets.midcast["Sleep II"] = sets.midcast.EnfeeblingMagic
+sets.midcast["Sleepga"] = sets.midcast.EnfeeblingMagic
+    sets.midcast.Dispel = sets.midcast.EnfeeblingMagic
+sets.midcast["Addle"] = sets.midcast.EnfeeblingMagic
+sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagic
+sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagic    
+sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagic
+sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagic    
+sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagic
+sets.midcast["Break"] = sets.midcast.EnfeeblingMagic
+sets.midcast["Blind II"] = sets.midcast.EnfeeblingMagic
+sets.midcast["Poison II"] = sets.midcast.EnfeeblingMagic
+
+    sets.midcast.EnhancingMagic = {
+        main="Daybreak",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head="Leth. Chappel +2",
+        body="Lethargy Sayon +2",
+        hands="Atro. Gloves +4",
+        legs="Leth. Fuseau +2",
+        feet="Leth. Houseaux +2",
+        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        waist="Embla Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back="Sucellos's Cape",
+    }
+
+    sets.midcast["Haste II"] = sets.midcast.EnhancingMagic
+    sets.midcast.Haste = sets.midcast.EnhancingMagic
+    sets.midcast.Phalanx = sets.midcast.EnhancingMagic
+    sets.midcast["Phalanx II"] = sets.midcast.EnhancingMagic
+sets.midcast["Blink"] = sets.midcast.EnhancingMagic
+sets.midcast["Aquaveil"] = sets.midcast.EnhancingMagic
+    sets.midcast["Temper II"] = sets.midcast.EnhancingMagic
+	sets.midcast["Flurry II"] = sets.midcast.EnhancingMagic
+sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic
+sets.midcast["Ice Spikes"] = sets.midcast.EnhancingMagic
+sets.midcast["Shock Spikes"] = sets.midcast.EnhancingMagic
+sets.midcast["Enthunder"] = sets.midcast.EnhancingMagic
+sets.midcast["Enstone"] = sets.midcast.EnhancingMagic
+sets.midcast["Enaero"] = sets.midcast.EnhancingMagic
+sets.midcast["Enblizzard"] = sets.midcast.EnhancingMagic
+sets.midcast["Enfire"] = sets.midcast.EnhancingMagic
+sets.midcast["Enwater"] = sets.midcast.EnhancingMagic
+sets.midcast["Enwater II"] = sets.midcast.EnhancingMagic
+sets.midcast["Enthunder II"] = sets.midcast.EnhancingMagic
+sets.midcast["Enstone II"] = sets.midcast.EnhancingMagic
+sets.midcast["Enaero II"] = sets.midcast.EnhancingMagic
+sets.midcast["Enblizzard II"] = sets.midcast.EnhancingMagic
+sets.midcast["Enfire II"] = sets.midcast.EnhancingMagic
+sets.midcast["Baramnesia"] = sets.midcast.EnhancingMagic
+sets.midcast["Barvirus"] = sets.midcast.EnhancingMagic
+sets.midcast["Barparalyze"] = sets.midcast.EnhancingMagic
+sets.midcast["Barsilence"] = sets.midcast.EnhancingMagic
+sets.midcast["Barpetrify"] = sets.midcast.EnhancingMagic
+sets.midcast["Barpoison"] = sets.midcast.EnhancingMagic
+sets.midcast["Barblind"] = sets.midcast.EnhancingMagic
+sets.midcast["Barsleep"] = sets.midcast.EnhancingMagic
+sets.midcast["Baramnesra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barvira"] = sets.midcast.EnhancingMagic
+sets.midcast["Barparalyzra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barsilencera"] = sets.midcast.EnhancingMagic
+sets.midcast["Barpetra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barpoisonra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barblindra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barsleepra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barfira"] = sets.midcast.EnhancingMagic
+sets.midcast["Barblizzara"] = sets.midcast.EnhancingMagic
+sets.midcast["Baraera"] = sets.midcast.EnhancingMagic
+sets.midcast["Barstonra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barthundra"] = sets.midcast.EnhancingMagic
+sets.midcast["Barwatera"] = sets.midcast.EnhancingMagic
+sets.midcast["Barfire"] = sets.midcast.EnhancingMagic
+sets.midcast["Barblizzard"] = sets.midcast.EnhancingMagic
+sets.midcast["Baraero"] = sets.midcast.EnhancingMagic
+sets.midcast["Barstone"] = sets.midcast.EnhancingMagic
+sets.midcast["Barthunder"] = sets.midcast.EnhancingMagic
+sets.midcast["Barwater"] = sets.midcast.EnhancingMagic
+sets.midcast["Gain-INT"] = sets.midcast.EnhancingMagic
+sets.midcast["Gain-MND"] = sets.midcast.EnhancingMagic
+sets.midcast["Gain-STR"] = sets.midcast.EnhancingMagic
+sets.midcast["Gain-VIT"] = sets.midcast.EnhancingMagic
+sets.midcast["Gain-AGI"] = sets.midcast.EnhancingMagic
+sets.midcast["Gain-DEX"] = sets.midcast.EnhancingMagic
+sets.midcast["Ice Spikes"] = sets.midcast.EnhancingMagic
+sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic
+sets.midcast["Shock Spikes"] = sets.midcast.EnhancingMagic
+
+
+sets.midcast.Gain = {
+        main="Daybreak",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head="Leth. Chappel +2",
+        body="Lethargy Sayon +2",
+        hands="Viti. Gloves +3",
+        legs="Leth. Fuseau +2",
+        feet="Leth. Houseaux +2",
+        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        waist="Embla Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back="Sucellos's Cape",
+    }
+
+sets.midcast["Gain-INT"] = sets.midcast.Gain
+sets.midcast["Gain-MND"] = sets.midcast.Gain
+sets.midcast["Gain-STR"] = sets.midcast.Gain
+sets.midcast["Gain-VIT"] = sets.midcast.Gain
+sets.midcast["Gain-AGI"] = sets.midcast.Gain
+sets.midcast["Gain-DEX"] = sets.midcast.Gain
+
+
+    sets.midcast.Refresh = {
+        main="Daybreak",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head="Leth. Chappel +2",
+        body="Atrophy Tabard +4",
+        hands="Atro. Gloves +4",
+        legs="Leth. Fuseau +2",
+        feet="Leth. Houseaux +2",
+        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        waist="Embla Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back="Sucellos's Cape",
+    }
+
+sets.midcast.Refresh = sets.midcast.Refresh
+    sets.midcast["Refresh III"] = sets.midcast.Refresh
+
+
+    sets.midcast.Cure = {
+        main="Daybreak",
+        sub="Sacro Bulwark",
+        ammo="Homiliary",
+        head="Atro. Chapeau +4",
+        body="Bunzi's Robe",
+        hands="Atro. Gloves +4",
+        legs="Atrophy Tights +3",
+        feet="Atro. Boots +4",
+        neck="Nodens Gorget",
+        waist="Embla Sash",
+        left_ear="Mendi. Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back="Solemnity Cape",
+    }
+
+    sets.midcast["Cure II"] = sets.midcast.Cure
+    sets.midcast["Cure III"] = sets.midcast.Cure
+    sets.midcast["Cure IV"] = sets.midcast.Cure
+    sets.midcast["Cure V"] = sets.midcast.Cure
+
+
+
+
+
+  sets.midcast.ElementalMagic = {
+        main="Bunzi's Rod",
+        sub="Ammurapi Shield",
+        ammo="Ghastly Tathlum +1",
+        head="Leth. Chappel +2",
+        body="Lethargy Sayon +2",
+        hands="Leth. Ganth. +2",
+        legs="Leth. Fuseau +2",
+        feet="Vitiation Boots +4",
+        neck="Sibyl Scarf",
+        waist="Eschan Stone",
+        left_ear="Regal Earring",
+        right_ear="Malignance Earring",
+        left_ring="Resonance Ring",
+        right_ring="Metamor. Ring +1",
+        back="Null Shawl",
+    }
+
+sets.midcast["Fire"] = sets.midcast.ElementalMagic
+sets.midcast["Fire II"] = sets.midcast.ElementalMagic
+sets.midcast["Fire III"] = sets.midcast.ElementalMagic
+sets.midcast["Fire IV"] = sets.midcast.ElementalMagic
+sets.midcast["Fire V"] = sets.midcast.ElementalMagic
+sets.midcast["Stone"] = sets.midcast.ElementalMagic
+sets.midcast["Stone II"] = sets.midcast.ElementalMagic
+sets.midcast["Stone III"] = sets.midcast.ElementalMagic
+sets.midcast["Stone IV"] = sets.midcast.ElementalMagic
+sets.midcast["Stone V"] = sets.midcast.ElementalMagic
+sets.midcast["Aero"] = sets.midcast.ElementalMagic
+sets.midcast["Aero II"] = sets.midcast.ElementalMagic
+sets.midcast["Aero III"] = sets.midcast.ElementalMagic
+sets.midcast["Aero IV"] = sets.midcast.ElementalMagic
+sets.midcast["Aero V"] = sets.midcast.ElementalMagic
+sets.midcast["Water"] = sets.midcast.ElementalMagic
+sets.midcast["Water II"] = sets.midcast.ElementalMagic
+sets.midcast["Water III"] = sets.midcast.ElementalMagic
+sets.midcast["Water IV"] = sets.midcast.ElementalMagic
+sets.midcast["Water V"] = sets.midcast.ElementalMagic
+sets.midcast["Thunder"] = sets.midcast.ElementalMagic
+sets.midcast["Thunder II"] = sets.midcast.ElementalMagic
+sets.midcast["Thunder III"] = sets.midcast.ElementalMagic
+sets.midcast["Thunder IV"] = sets.midcast.ElementalMagic
+sets.midcast["Thunder V"] = sets.midcast.ElementalMagic
+sets.midcast["Blizzard"] = sets.midcast.ElementalMagic
+sets.midcast["Blizzard II"] = sets.midcast.ElementalMagic
+sets.midcast["Blizzard III"] = sets.midcast.ElementalMagic
+sets.midcast["Blizzard IV"] = sets.midcast.ElementalMagic
+sets.midcast["Blizzard V"] = sets.midcast.ElementalMagic
+
+sets.midcast.Impact= {
+    main="Daybreak",
+    sub="Archduke's Shield",
+    ammo="Regal Gem",
+    body="Crepuscular Cloak",
+    hands="Atro. Gloves +4",
+    legs="Atrophy Tights +3",
+    feet="Atro. Boots +4",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Malignance Earring",
+    right_ear="Friomisi Earring",
+	left_ring="Kishar Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",
+}
+
+sets.midcast["Impact"] = sets.midcast.Impact
+
+end
+
+function select_default_macro_book()
+    set_macro_page(1, 18)
+end
+
+function set_lockstyle()
+    send_command('wait 4; input /lockstyleset 61')
+end
+
+function job_precast(spell, action, spellMap, eventArgs)
+    check_weaponlock()
+end
+
+function check_weaponlock()
+    if state.WeaponLock.value then
+        disable("main")
+        disable("sub")
+        disable("range")
+        disable("ammo")
+    else
+        enable("main")
+        enable("sub")
+        enable("range")
+        enable("ammo")
+    end
+end
+
+function job_status_change(newStatus, oldStatus, eventArgs)
+    check_weaponlock()
+end
+
+function job_update(cmdParams, eventArgs)
+    check_weaponlock()
+end
