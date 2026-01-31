@@ -80,7 +80,7 @@ function user_setup()
 	state.IdleMode:options('Normal','DT','Regen','Regain')
 	state.HybridMode:options('Normal', 'Mixed', 'MEVA', 'PDT')
     send_command('bind f9 gs c cycle HybridMode')
-	select_default_macro_book()
+	select_default_macro_book(4,1)
 	set_lockstyle()
 
 end
@@ -132,7 +132,7 @@ function init_gear_sets()
 	Pummeler_Head = "Pummeler's Mask"
 	Pummeler_Body = "Pummeler's Lorica +2"
 	Pummeler_Legs = "Pummeler's Cuisses +4"
-	Pummeler_Feet = "Pummeler's Calligae"
+	Pummeler_Feet = "Pummeler's Calligae +4"
 	-- The head could be useful for slightly longer aggressor, but we opt not to.
 	-- End Artifact (Other pieces on slip)
 	-- Start Relic
@@ -228,19 +228,20 @@ function init_gear_sets()
 		-- MEVA: 0, MDB: 0, PDT: 56, MDT: 41
 		-- STP: 00, DATK: 105
 		-- Acc: 1243, Atk: 1497
-    	ammo="Coiste Bodhar",
+    	    ammo="Coiste Bodhar",
     head="Sakpata's Helm",
     body="Sakpata's Plate",
     hands="Sakpata's Gauntlets",
-    legs="Pumm. Cuisses +4",
-    feet="Sakpata's Leggings",
+    legs="Sakpata's Cuisses",
+    feet="Pumm. Calligae +4",
     neck={ name="War. Beads +1", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
+    left_ear="Schere Earring",
     right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Crit.hit rate+4',}},
     left_ring="Murky Ring",
     right_ring="Niqmaddu Ring",
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+3','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+3','"Dbl.Atk."+10','Damage taken-5%',}},
+
 }
 	
 
@@ -286,7 +287,7 @@ function init_gear_sets()
     		right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+	12','Crit.hit rate+4',}},
     		left_ring="Murky Ring",
     		right_ring="Niqmaddu Ring",
- 	   	back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+3','"Dbl.Atk."+	10','Phys. dmg. taken-10%',}}
+ 	   	back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+3','"Dbl.Atk."+10','Damage taken-5%',}}
 }
 
 	sets.TP.Chango.Mixed = 
@@ -580,7 +581,7 @@ function job_self_command(cmdParams, eventArgs)
 	if check_cmd_param(cmdParams,"chango") then
 		equip(sets.chango)
 		send_command('input /lockstyleset 21')
-		set_macro_page(8, 1)
+		set_macro_page(4, 1)
 	elseif check_cmd_param(cmdParams,"shining") then
 		equip(sets.shiningone)
 		send_command('input /lockstyleset 22')
