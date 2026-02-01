@@ -99,7 +99,30 @@ sets.midcast["Reraise II"] = sets.midcast.Utsusemi
         left_ring="Kishar Ring",
         right_ring="Defending Ring",
         back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+
+}
+sets.midcast["Stoneskin"] = sets.midcast.Stoneskin
+
+sets.midcast.Aquaveil = {
+        main="Daybreak",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head= "Amalric Coif +1",
+        body="Viti. Tabard +3",
+        hands="Atro. Gloves +4",
+        legs="Shedir Seraweels",
+        feet="Leth. Houseaux +2",
+        neck="Dls. Torque +1",
+        waist="Emphatikos Rope",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Kishar Ring",
+        right_ring="Defending Ring",
+        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
     }
+
+sets.midcast["Aquaveil"] = sets.midcast.Aquaveil
+
 
 sets.engaged = {
 ammo="Coiste Bodhar",
@@ -178,7 +201,7 @@ sets.precast.WS["Savage Blade"] = {
     right_ear="Moonshade Earring",
     left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
-    back="Null Shawl",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Black Halo"] = {
@@ -194,7 +217,7 @@ sets.precast.WS["Black Halo"] = {
     right_ear="Moonshade Earring",
     left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Seraph Blade"] = {
@@ -210,7 +233,7 @@ sets.precast.WS["Seraph Blade"] = {
         right_ear="Malignance Earring",
     left_ring="Murky Ring",
         right_ring="Metamor. Ring +1",
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Sanguine Blade"] = {
@@ -226,8 +249,7 @@ sets.precast.WS["Sanguine Blade"] = {
         right_ear="Malignance Earring",
     left_ring="Archon Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
-}
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},}
 
 
 sets.precast.WS["Knights of Round"]
@@ -244,9 +266,8 @@ sets.precast.WS["Knights of Round"]
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
     left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
-
 
 
     sets.midcast.Gravity = {
@@ -258,17 +279,15 @@ sets.precast.WS["Knights of Round"]
         hands="Leth. Ganth. +2",
         legs="Atrophy Tights +3",
         feet="Vitiation Boots +4",
-        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        neck="Dls. Torque +1",
         waist="Obstin. Sash",
         left_ear="Malignance Earring",
         right_ear="Snotra Earring",
 	left_ring="Kishar Ring",
         right_ring="Metamor. Ring +1",
         back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
-
-
-	
     }
+
 sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
 
     sets.midcast["Gravity II"] = sets.midcast.Gravity
@@ -282,7 +301,7 @@ sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
     head="Viti. Chapeau +4",
     body="Atrophy Tabard +4",
     hands="Leth. Ganth. +2",
-    legs={ name="Chironic Hose", augments={'Attack+16','Pet: "Store TP"+6','Mag. Acc.+13 "Mag.Atk.Bns."+13',}},
+    legs="Chironic Hose",
     feet="Viti. Boots +4",
     neck={ name="Dls. Torque +1", augments={'Path: A',}},
     waist="Obstin. Sash",
@@ -337,7 +356,6 @@ sets.midcast["Poison II"] = sets.midcast.EnfeeblingMagic
     sets.midcast.Phalanx = sets.midcast.EnhancingMagic
     sets.midcast["Phalanx II"] = sets.midcast.EnhancingMagic
 sets.midcast["Blink"] = sets.midcast.EnhancingMagic
-sets.midcast["Aquaveil"] = sets.midcast.EnhancingMagic
     sets.midcast["Temper II"] = sets.midcast.EnhancingMagic
 	sets.midcast["Flurry II"] = sets.midcast.EnhancingMagic
 sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic
@@ -424,7 +442,7 @@ sets.midcast["Gain-DEX"] = sets.midcast.Gain
         main="Daybreak",
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
-        head="Leth. Chappel +2",
+        head="Amalric Coif +1",
         body="Atrophy Tabard +4",
         hands="Atro. Gloves +4",
         legs="Leth. Fuseau +2",
@@ -464,6 +482,8 @@ sets.midcast.Refresh = sets.midcast.Refresh
     sets.midcast["Cure III"] = sets.midcast.Cure
     sets.midcast["Cure IV"] = sets.midcast.Cure
     sets.midcast["Cure V"] = sets.midcast.Cure
+
+
 
 
 
