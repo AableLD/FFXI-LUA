@@ -123,8 +123,8 @@ function init_gear_sets()
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Ishvara Earring",
 		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-		left_ring="Regal Ring",
-		right_ring="Rufescent Ring",
+		right_ring="Regal Ring",
+		left_ring="Rufescent Ring",
 		back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},}
 
     sets.precast.WS.Acc = {}
@@ -168,7 +168,7 @@ function init_gear_sets()
     		waist="Creed Baudrier",
     		left_ear="Alabaster Earring",
     		right_ear="Cryptic Earring",
-    		left_ring="Pernicious Ring",
+    		left_ring="Apeile Ring",
     		right_ring="Apeile Ring +1",
     		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},}
 	
@@ -183,7 +183,7 @@ function init_gear_sets()
 		left_ear="Thrud Earring",
 		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
 		right_ring="Regal Ring",
-		left_ring="Ephramad's Ring",
+		left_ring="Cornelia's Ring",
 		back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+2','Weapon skill damage +10%',}},}
 		
 	sets.precast.WS['Black Halo'] = set_combine(sets.precast.WS['Savage Blade'], {})
@@ -198,8 +198,8 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
 		left_ear="Odnowa Earring +1",
-		left_ring="Regal Ring",
-		right_ring="Mephramad's Ring",
+		right_ring="Regal Ring",
+		left_ring="Cornelia's Ring",
 		back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+2','Weapon skill damage +10%',}},}
 		
 	sets.precast.WS['Knights of Round'] = {ammo="Oshasha's Treatise",
@@ -254,8 +254,8 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
-		left_ring="Regal Ring",
-		right_ring="Gelatinous Ring +1",
+		right_ring="Regal Ring",
+		left_ring="Gelatinous Ring +1",
 		back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+2','Weapon skill damage +10%',}},}
 	
 	sets.precast.WS['Resolution'] = {ammo="Coiste Bodhar",
@@ -268,8 +268,8 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear="Thrud Earring",
 		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-		left_ring="Regal Ring",
-		right_ring="Shukuyu Ring",
+		right_ring="Regal Ring",
+		left_ring="Shukuyu Ring",
 		back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+2','Weapon skill damage +10%',}},}
 		
 	sets.precast.WS['Cataclysm'] = {ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
@@ -750,12 +750,12 @@ end
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'WAR' then
-        set_macro_page(1, 8)
+        set_macro_page(2, 3)
     elseif player.sub_job == 'BLU' then
-        set_macro_page(2, 8)
+        set_macro_page(2, 3)
     elseif player.sub_job == 'SAM' then
-        set_macro_page(3, 8)
+        set_macro_page(2, 3)
     else
-        set_macro_page(1, 8)
+        set_macro_page(2, 3)
     end
 end

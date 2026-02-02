@@ -92,7 +92,7 @@ sets.midcast["Reraise II"] = sets.midcast.Utsusemi
         hands="Atro. Gloves +4",
         legs="Shedir Seraweels",
         feet="Leth. Houseaux +2",
-        neck="Stone Gorget",
+        neck="Nodens Gorget",
         waist="Siegel Sash",
         left_ear="Earthcry Earring",
         right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
@@ -140,6 +140,23 @@ ammo="Coiste Bodhar",
     back="Null Shawl",
 }
 
+sets.precast.WS["Requiescat"] = {
+ammo="Coiste Bodhar",
+    head="Viti. Chapeau +4",
+    body="Nyame Mail",
+    hands="Malignance Gloves",
+    legs="Nyame Flanchard",
+    feet="Leth. Houseaux +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Moonshade Earring",
+    right_ear="Regal Earring",
+    right_ring="Rufescent Ring",
+    left_ring="Cornelia's Ring",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
+}
+
+
 sets.precast.WS["Death Blossom"] = {
 ammo="Coiste Bodhar",
     head="Viti. Chapeau +4",
@@ -150,10 +167,10 @@ ammo="Coiste Bodhar",
     neck="Rep. Plat. Medal",
     waist="Sailfi Belt +1",
     left_ear="Sherida Earring",
-    right_ear="Moonshade Earring",
-    left_ring="Ephramad's Ring",
-    right_ring="Metamor. Ring +1",
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+    right_ear="Regal Earring",
+    left_ring="Rufescent Ring",
+    right_ring="Cornelia's Ring",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Chant du Cygne"] = {
@@ -161,15 +178,15 @@ ammo="Coiste Bodhar",
     head="Viti. Chapeau +4",
     body="Malignance Tabard",
     hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
+    legs="Viti. Tights +3",
+    feet="Thereoid Greaves",
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
-    left_ring="Ephramad's Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Ilabrat Ring",
-    back="Null Shawl",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Evisceration"] = {
@@ -177,15 +194,15 @@ ammo="Coiste Bodhar",
     head="Viti. Chapeau +4",
     body="Malignance Tabard",
     hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
+    legs="Viti. Tights +3",
+    feet="Thereoid Greaves",
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
-    left_ring="Ephramad's Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Ilabrat Ring",
-    back="Null Shawl",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Savage Blade"] = {
@@ -199,23 +216,23 @@ sets.precast.WS["Savage Blade"] = {
     waist="Sailfi Belt +1",
     left_ear="Sherida Earring",
     right_ear="Moonshade Earring",
-    left_ring="Ephramad's Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Black Halo"] = {
     ammo="Coiste Bodhar",
-    head="Nyame Helm",
+    head="Viti. Chapeau +4",
     body="Nyame Mail",
     hands="Atro. Gloves +4",
     legs="Nyame Flanchard",
     feet="Leth. Houseaux +2",
     neck="Rep. Plat. Medal",
     waist="Sailfi Belt +1",
-    left_ear="Regal Earring",
+    left_ear="Sherida Earring",
     right_ear="Moonshade Earring",
-    left_ring="Ephramad's Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
@@ -228,27 +245,43 @@ sets.precast.WS["Seraph Blade"] = {
     legs="Nyame Flanchard",
     feet="Leth. Houseaux +2",
     neck="Fotia Gorget",
-        waist="Eschan Stone",
- left_ear="Moonshade Earring",
-        right_ear="Malignance Earring",
-    left_ring="Murky Ring",
-        right_ring="Metamor. Ring +1",
-    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
+    waist="Eschan Stone",
+    left_ear="Moonshade Earring",
+    right_ear="Malignance Earring",
+    right_ring="Freke Ring",
+    left_ring="Cornelia's Ring",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill         	damage +10%','Damage taken-5%',}},
+}
+
+sets.precast.WS["Red Lotus Blade"] = {
+    ammo="Ghastly Tathlum +1",
+    head="Leth. Chappel +2",
+    body="Nyame Mail",
+    hands="Jhakri Cuffs +2",
+    legs="Nyame Flanchard",
+    feet="Leth. Houseaux +2",
+    neck="Fotia Gorget",
+    waist="Eschan Stone",
+    left_ear="Moonshade Earring",
+    right_ear="Malignance Earring",
+    right_ring="Freke Ring",
+    left_ring="Cornelia's Ring",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill         	damage +10%','Damage taken-5%',}},
 }
 
 sets.precast.WS["Sanguine Blade"] = {
     ammo="Ghastly Tathlum +1",
     head="Pixie Hairpin +1",
     body="Nyame Mail",
-    hands="Atro. Gloves +4",
+    hands="Jhakri Cuffs +2",
     legs="Leth. Fuseau +2",
     feet="Leth. Houseaux +2",
     neck="Baetyl Pendant",
         waist="Eschan Stone",
  left_ear="Regal Earring",
         right_ear="Malignance Earring",
-    left_ring="Archon Ring",
-    right_ring="Metamor. Ring +1",
+    right_ring="Archon Ring",
+    left_ring="Cornelia's Ring",
     back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},}
 
 
@@ -264,7 +297,7 @@ sets.precast.WS["Knights of Round"]
     waist="Sailfi Belt +1",
     left_ear="Sherida Earring",
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
-    left_ring="Ephramad's Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 }
@@ -502,8 +535,8 @@ sets.midcast.Refresh = sets.midcast.Refresh
         waist="Acuity Belt +1",
         left_ear="Regal Earring",
         right_ear="Malignance Earring",
-        left_ring="Freke Ring",
-        right_ring="Metamor. Ring +1",
+        right_ring="Freke Ring",
+        left_ring="Metamor. Ring +1",
         back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
     }
 
@@ -550,8 +583,8 @@ sets.midcast.Impact= {
     waist="Null Belt",
     left_ear="Malignance Earring",
     right_ear="Friomisi Earring",
-	left_ring="Freke Ring",
-    right_ring="Metamor. Ring +1",
+	right_ring="Freke Ring",
+    left_ring="Metamor. Ring +1",
     back="Null Shawl",
 }
 

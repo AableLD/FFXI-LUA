@@ -367,8 +367,8 @@ function init_gear_sets()
 		ear1 = "Moonshade earring",
 		body = "Nyame Mail",
 		hands = Boii_Hands,
-		ring1 = "Ephramad's Ring",
-		ring2 = "Regal Ring",
+		ring1 = "Regal Ring",
+		ring2 = "Niqmaddu Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Nyame Flanchard",
@@ -383,7 +383,6 @@ function init_gear_sets()
 	})
 
 	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS,{
-		ring2 = "Niqmaddu Ring",
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
 		Ear2 = "Boii Earring",
@@ -392,7 +391,6 @@ function init_gear_sets()
 
 	sets.precast.WS["Impulse Drive"] = set_combine(sets.precast.WS, {
 		neck = JSE_Neck,
-		ring2 = "Niqmaddu Ring",
 		legs = Boii_Legs,
 		Body= "Hjarrandi Breastplate",
 		waist="Sailfi Belt +1",
@@ -406,7 +404,6 @@ function init_gear_sets()
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
 		ear2="Schere Earring",
-		ring1="Niqmaddu Ring",
 	})
 
 	sets.precast.WS["Upheaval"] = set_combine(sets.precast.WS, {
@@ -428,7 +425,6 @@ function init_gear_sets()
 		neck="Sanctity Necklace",
 		ear1="Crep. Earring",
 		ear2="Dignitary's Earring",
-		ring1="Flamma Ring",
 		ammo="Pemphredo Tathlum",
 	})
 
