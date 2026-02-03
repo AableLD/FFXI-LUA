@@ -25,7 +25,7 @@ function init_gear_sets()
       sub="Archduke's Shield",
       ammo="Homiliary",
       head="Viti. Chapeau +4",
-      body="Lethargy Sayon +2",
+      body="Lethargy Sayon +3",
       hands="Nyame Gauntlets",
       legs="Nyame Flanchard",
       feet="Nyame Sollerets",
@@ -308,7 +308,7 @@ sets.precast.WS["Knights of Round"]
         sub="Archduke's Shield",
         ammo="Regal Gem",
         head="Viti. Chapeau +4",
-        body="Lethargy Sayon +2",
+        body="Lethargy Sayon +3",
         hands="Leth. Ganth. +2",
         legs="Atrophy Tights +3",
         feet="Vitiation Boots +4",
@@ -332,7 +332,7 @@ sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
     sub="Ammurapi Shield",
     ammo="Regal Gem",
     head="Viti. Chapeau +4",
-    body="Atrophy Tabard +4",
+    body="Lethargy Sayon +3",
     hands="Leth. Ganth. +2",
     legs="Chironic Hose",
     feet="Viti. Boots +4",
@@ -355,7 +355,6 @@ sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
     sets.midcast.Sleep = sets.midcast.EnfeeblingMagic
     sets.midcast["Sleep II"] = sets.midcast.EnfeeblingMagic
 sets.midcast["Sleepga"] = sets.midcast.EnfeeblingMagic
-    sets.midcast.Dispel = sets.midcast.EnfeeblingMagic
 sets.midcast["Addle"] = sets.midcast.EnfeeblingMagic
 sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagic
 sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagic    
@@ -366,12 +365,35 @@ sets.midcast["Break"] = sets.midcast.EnfeeblingMagic
 sets.midcast["Blind II"] = sets.midcast.EnfeeblingMagic
 sets.midcast["Poison II"] = sets.midcast.EnfeeblingMagic
 
+
+    sets.midcast.EnfeeblingMagicDispel = {
+        main="Daybreak",
+    sub="Ammurapi Shield",
+    ammo="Regal Gem",
+    head="Viti. Chapeau +4",
+    body="Atrophy Tabard +4",
+    hands="Leth. Ganth. +2",
+    legs="Chironic Hose",
+    feet="Viti. Boots +4",
+    neck={ name="Dls. Torque +1", augments={'Path: A',}},
+    waist="Null Belt",
+    left_ear="Regal Earring",
+    right_ear="Snotra Earring",
+    left_ring="Kishar Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",    
+}
+
+sets.midcast.Dispel = sets.midcast.EnfeeblingMagicDispel
+sets.midcast["Dispelga"] = sets.midcast.EnfeeblingMagicDispel
+
+
     sets.midcast.EnhancingMagic = {
         main="Daybreak",
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
         head="Leth. Chappel +2",
-        body="Lethargy Sayon +2",
+        body="Lethargy Sayon +3",
         hands="Atro. Gloves +4",
         legs="Leth. Fuseau +2",
         feet="Leth. Houseaux +2",
@@ -450,7 +472,7 @@ sets.midcast.Gain = {
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
         head="Leth. Chappel +2",
-        body="Lethargy Sayon +2",
+        body="Lethargy Sayon +3",
         hands="Viti. Gloves +3",
         legs="Leth. Fuseau +2",
         feet="Leth. Houseaux +2",
@@ -527,7 +549,7 @@ sets.midcast.Refresh = sets.midcast.Refresh
         sub="Ammurapi Shield",
         ammo="Ghastly Tathlum +1",
         head="Leth. Chappel +2",
-        body="Lethargy Sayon +2",
+        body="Lethargy Sayon +3",
         hands="Leth. Ganth. +2",
         legs="Leth. Fuseau +2",
         feet="Vitiation Boots +4",
