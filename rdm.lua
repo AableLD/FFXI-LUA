@@ -29,10 +29,10 @@ function init_gear_sets()
       hands="Nyame Gauntlets",
       legs="Nyame Flanchard",
       feet="Nyame Sollerets",
-      neck={ name="Dls. Torque +1", augments={'Path: A',}},
+      neck="Warder's Charm +1",
       waist="Null Belt",
       left_ear="Alabaster Earring",
-      right_ear="Infused Earring",
+      right_ear="Eabani Earring",
       left_ring="Murky Ring",
         right_ring="Shneddick Ring",
         back="Null Shawl",
@@ -327,8 +327,38 @@ sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
     sets.midcast["Gravity"] = sets.midcast.Gravity
 
 
+sets.midcast.EnfeeblingMagicINT = {
+    main="Bunzi's Rod",
+    sub="Ammurapi Shield",
+    ammo="Regal Gem",
+    head="Viti. Chapeau +4",
+    body="Lethargy Sayon +3",
+    hands="Leth. Ganth. +2",
+    legs="Chironic Hose",
+    feet="Viti. Boots +4",
+    neck={ name="Dls. Torque +1", augments={'Path: A',}},
+    waist="Obstin. Sash",
+    left_ear="Regal Earring",
+    right_ear="Snotra Earring",
+    left_ring="Kishar Ring",
+    right_ring="Metamor. Ring +1",
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},    
+}
+
+    sets.midcast.Bind = sets.midcast.EnfeeblingMagicINT
+    sets.midcast.Sleep = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Sleep II"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Sleepga"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Poison II"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Poison"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Break"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Blind II"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Blind"] = sets.midcast.EnfeeblingMagicINT
+
+
+
     sets.midcast.EnfeeblingMagic = {
-        main="Daybreak",
+    main="Daybreak",
     sub="Ammurapi Shield",
     ammo="Regal Gem",
     head="Viti. Chapeau +4",
@@ -346,24 +376,20 @@ sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
 }
 
 
-    sets.midcast.Bind = sets.midcast.EnfeeblingMagic
     sets.midcast.Slow = sets.midcast.EnfeeblingMagic
     sets.midcast["Slow II"] = sets.midcast.EnfeeblingMagic
     sets.midcast.Paralyze = sets.midcast.EnfeeblingMagic
     sets.midcast["Paralyze II"] = sets.midcast.EnfeeblingMagic
     sets.midcast.Silence = sets.midcast.EnfeeblingMagic
-    sets.midcast.Sleep = sets.midcast.EnfeeblingMagic
-    sets.midcast["Sleep II"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Sleepga"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Addle"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagic    
-sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagic    
-sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Break"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Blind II"] = sets.midcast.EnfeeblingMagic
-sets.midcast["Poison II"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Addle"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Distract"] = sets.midcast.EnfeeblingMagic    
+    sets.midcast["Frazzle"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagic    
+    sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagic    
+    sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagic
+
 
 
     sets.midcast.EnfeeblingMagicDispel = {
