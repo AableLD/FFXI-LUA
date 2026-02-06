@@ -56,7 +56,7 @@ function init_gear_sets()
         back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
 
     }
-	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {body="Crepuscular Cloak"})
+	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {body="Crepuscular Cloak",left_ring="Kishar Ring",legs="Lengo Pants",})
 
 
 sets.midcast.Utsusemi = {
@@ -413,6 +413,44 @@ sets.midcast.EnfeeblingMagicINT = {
 sets.midcast.Dispel = sets.midcast.EnfeeblingMagicDispel
 sets.midcast["Dispelga"] = sets.midcast.EnfeeblingMagicDispel
 
+    sets.midcast.AbsorbTP = {
+    main="Bunzi's Rod",
+    sub="Ammurapi Shield",
+    ammo="Regal Gem",
+    head="Atro. Chapeau +4",
+    body="Viti. Tabard +3",
+    hands="Atro. Gloves +4",
+    legs="Leth. Fuseau +2",
+    feet="Atro. Boots +4",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Regal Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Kishar Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",
+}
+
+
+sets.midcast.drain = {
+    main="Bunzi's Rod",
+    sub="Ammurapi Shield",
+    ammo="Regal Gem",
+    head="Atro. Chapeau +4",
+    body="Viti. Tabard +3",
+    hands="Atro. Gloves +4",
+    legs="Leth. Fuseau +2",
+    feet="Atro. Boots +4",
+    neck="Erra Pendant",
+    waist="Fucho-no-Obi",
+    left_ear="Regal Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Kishar Ring",
+    right_ring="Evanescence Ring",
+    back="Null Shawl",
+}
+
+sets.midcast["aspir"] = sets.midcast.drain
 
     sets.midcast.EnhancingMagic = {
         main="Daybreak",
