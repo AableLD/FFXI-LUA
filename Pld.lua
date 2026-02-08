@@ -97,7 +97,7 @@ function init_gear_sets()
     sets.precast.FC = {ammo="Sapience Orb",
     head="Chev. Armet +3",
     body="Sacro Breastplate",
-    hands="Chev. Gauntlets +3",
+    hands="Leyline Gloves",
     legs="Enif Cosciales",
     feet="Chev. Sabatons +3",
     neck="Unmoving Collar +1",
