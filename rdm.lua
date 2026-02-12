@@ -39,22 +39,19 @@ function init_gear_sets()
     }
 
     sets.precast.FC = {
-        main="Daybreak",
-        sub="Archduke's Shield",
-        ammo="Sapience Orb",
-        head="Atro. Chapeau +4",
-        body="Viti. Tabard +4",
-        hands="Leth. Ganth. +2",
-        legs="Atrophy Tights +4",
-        feet="Vitiation Boots +4",
-        neck="Voltsurge Torque",
-        waist="Embla Sash",
-        left_ear="Alabaster Earring",
-        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
-        left_ring="Murky Ring",
-        right_ring="Defending Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
-
+            ammo="Sapience Orb",
+    head="Atro. Chapeau +4",
+    body="Viti. Tabard +4",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Sanctity Necklace",
+    waist="Witful Belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Veneficium Ring",
+    right_ring="Lebeche Ring",
+    back="Perimede Cape",
     }
 	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {body="Crepuscular Cloak",left_ring="Kishar Ring",legs="Lengo Pants",})
 
