@@ -21,7 +21,7 @@ end
 function init_gear_sets()
 
  sets.idle = {
-      main="Daybreak",
+      main="Bolelabunga",
       sub="Archduke's Shield",
       ammo="Homiliary",
       head="Viti. Chapeau +4",
@@ -53,7 +53,7 @@ function init_gear_sets()
     right_ring="Lebeche Ring",
     back="Perimede Cape",
     }
-	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {body="Crepuscular Cloak",left_ring="Kishar Ring",legs="Lengo Pants",})
+	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {body="Crepuscular Cloak",left_ring="Kishar Ring",legs="Lengo Pants",hands="Chironic Gloves",})
 
 
 sets.midcast.Utsusemi = {
@@ -601,7 +601,23 @@ sets.midcast.Refresh = sets.midcast.Refresh
 
 
 
+    sets.midcast.Cursna = {
+        head="Viti. Chapeau +4",
+    body="Viti. Tabard +4",
+    hands="Leth. Ganth. +2",
+    legs="Atro. Tights +4",
+    feet="Gende. Galosh. +1",
+    neck="Debilis Medallion",
+    waist="Tempus Fugit",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Haoma's Ring",
+    right_ring="Menelaus's Ring",
+    back="Oretan. Cape +1",
+    }
 
+
+    sets.midcast["Cursna"] = sets.midcast.Cursna
 
 
 

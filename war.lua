@@ -158,7 +158,7 @@ function init_gear_sets()
 
 	sets.idle = {
 	    ammo="Crepuscular Pebble",
-    	head="Sakpata's Helm",
+    	head="Null Masque",
     	body="Sacro Breastplate",
     	hands="Sakpata's Gauntlets",
     	legs="Sakpata's Cuisses",
@@ -179,7 +179,7 @@ function init_gear_sets()
     }
 
 	sets.regain =  {
-		head="Valorous Mask", 
+		head="Null Masque", 
 		neck = "Republican Platinum Medal",
 	}
 

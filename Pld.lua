@@ -96,7 +96,7 @@ function init_gear_sets()
     
     sets.precast.FC = {ammo="Sapience Orb",
     head="Chev. Armet +3",
-    body="Sacro Breastplate",
+    body="Reverence surcoat +4",
     hands="Leyline Gloves",
     legs="Enif Cosciales",
     feet="Chev. Sabatons +3",
@@ -455,7 +455,7 @@ function init_gear_sets()
 
     -- Idle sets
 	sets.idle = {ammo="Crepuscular Pebble",
-	    head="Chev. Armet +3",
+	    head="Null Masque",
     	body="Sacro Breastplate",
     	hands="Chev. Gauntlets +3",
     	legs="Chev. Cuisses +3",
@@ -497,7 +497,7 @@ function init_gear_sets()
 	    	back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},}
 
     sets.idle.Town = {ammo="Homiliary",
-	head="Chev. Armet +3",
+	head="Null Masque",
     	body="Sacro Breastplate",
     	hands="Chev. Gauntlets +3",
     	legs="Chev. Cuisses +3",
