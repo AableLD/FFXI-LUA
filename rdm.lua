@@ -342,10 +342,11 @@ sets.midcast.EnfeeblingMagicINT = {
     back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},    
 }
 
-    sets.midcast.Bind = sets.midcast.EnfeeblingMagicINT
-    sets.midcast.Sleep = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Bind"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Sleep"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Sleep II"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Sleepga"] = sets.midcast.EnfeeblingMagicINT
+    sets.midcast["Sleepga II"] = sets.midcast.EnfeeblingMagicINT    
     sets.midcast["Poison II"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Poison"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Break"] = sets.midcast.EnfeeblingMagicINT
@@ -373,20 +374,38 @@ sets.midcast.EnfeeblingMagicINT = {
 }
 
 
-    sets.midcast.Slow = sets.midcast.EnfeeblingMagic
+    sets.midcast["Slow"] = sets.midcast.EnfeeblingMagic
     sets.midcast["Slow II"] = sets.midcast.EnfeeblingMagic
-    sets.midcast.Paralyze = sets.midcast.EnfeeblingMagic
+    sets.midcast["Paralyze"] = sets.midcast.EnfeeblingMagic
     sets.midcast["Paralyze II"] = sets.midcast.EnfeeblingMagic
-    sets.midcast.Silence = sets.midcast.EnfeeblingMagic
-    sets.midcast["Addle"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Distract"] = sets.midcast.EnfeeblingMagic    
-    sets.midcast["Frazzle"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagic    
-    sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagic    
-    sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Silence"] = sets.midcast.EnfeeblingMagic
 
+    sets.midcast.EnfeeblingMagicNI = {
+    main="Daybreak",
+    sub="Ammurapi Shield",
+    ammo="Regal Gem",
+    head="Viti. Chapeau +4",
+    body="Lethargy Sayon +3",
+    hands="Leth. Ganth. +2",
+    legs="Leth. Fuseau +2",
+    feet="Viti. Boots +4",
+    neck={ name="Dls. Torque +1", augments={'Path: A',}},
+    waist="Obstin. Sash",
+    left_ear="Regal Earring",
+    right_ear="Snotra Earring",
+    left_ring="Kishar Ring",
+    right_ring="Metamor. Ring +1",
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},    
+}
+
+    sets.midcast["Addle"] = sets.midcast.EnfeeblingMagicNI
+    sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagicNI
+    sets.midcast["Distract"] = sets.midcast.EnfeeblingMagicNI    
+    sets.midcast["Frazzle"] = sets.midcast.EnfeeblingMagicNI
+    sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagicNI    
+    sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagicNI
+    sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagicNI    
+    sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagicNI
 
 
     sets.midcast.EnfeeblingMagicDispel = {
@@ -449,7 +468,7 @@ sets.midcast.drain = {
 
 sets.midcast["aspir"] = sets.midcast.drain
 
-    sets.midcast.EnhancingMagic = {
+    sets.midcast.EnhancingMagicOthers = {
         main="Daybreak",
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
@@ -467,13 +486,36 @@ sets.midcast["aspir"] = sets.midcast.drain
         back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
     }
 
-    sets.midcast["Haste II"] = sets.midcast.EnhancingMagic
-    sets.midcast.Haste = sets.midcast.EnhancingMagic
-    sets.midcast.Phalanx = sets.midcast.EnhancingMagic
-    sets.midcast["Phalanx II"] = sets.midcast.EnhancingMagic
+    sets.midcast["Haste II"] = sets.midcast.EnhancingMagicOthers
+    sets.midcast.Haste = sets.midcast.EnhancingMagicOthers
+    sets.midcast["Phalanx II"] = sets.midcast.EnhancingMagicOthers
+    sets.midcast["Phalanx"] = sets.midcast.EnhancingMagic
+	sets.midcast["Flurry II"] = sets.midcast.EnhancingMagicOthers
+    sets.midcast["Protect V"] = sets.midcast.EnhancingMagicOthers
+    sets.midcast["Shell V"] = sets.midcast.EnhancingMagicOthers
+
+
+
+sets.midcast.EnhancingMagic = {
+        main="Daybreak",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head="Atro. Chapeau +4",
+        body="Vitiation tabard +4",
+        hands="Viti. Gloves +4",
+        legs="Atrophy tights +4",
+        feet="Leth. Houseaux +3",
+        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        waist="Embla Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+    }
+
 sets.midcast["Blink"] = sets.midcast.EnhancingMagic
     sets.midcast["Temper II"] = sets.midcast.EnhancingMagic
-	sets.midcast["Flurry II"] = sets.midcast.EnhancingMagic
 sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic
 sets.midcast["Ice Spikes"] = sets.midcast.EnhancingMagic
 sets.midcast["Shock Spikes"] = sets.midcast.EnhancingMagic
@@ -517,12 +559,6 @@ sets.midcast["Baraero"] = sets.midcast.EnhancingMagic
 sets.midcast["Barstone"] = sets.midcast.EnhancingMagic
 sets.midcast["Barthunder"] = sets.midcast.EnhancingMagic
 sets.midcast["Barwater"] = sets.midcast.EnhancingMagic
-sets.midcast["Gain-INT"] = sets.midcast.EnhancingMagic
-sets.midcast["Gain-MND"] = sets.midcast.EnhancingMagic
-sets.midcast["Gain-STR"] = sets.midcast.EnhancingMagic
-sets.midcast["Gain-VIT"] = sets.midcast.EnhancingMagic
-sets.midcast["Gain-AGI"] = sets.midcast.EnhancingMagic
-sets.midcast["Gain-DEX"] = sets.midcast.EnhancingMagic
 sets.midcast["Ice Spikes"] = sets.midcast.EnhancingMagic
 sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic
 sets.midcast["Shock Spikes"] = sets.midcast.EnhancingMagic
@@ -532,10 +568,10 @@ sets.midcast.Gain = {
         main="Daybreak",
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
-        head="Leth. Chappel +2",
-        body="Lethargy Sayon +3",
+        head="Atro. Chapeau +4",
+        body="Vitiation tabard +4",
         hands="Viti. Gloves +4",
-        legs="Leth. Fuseau +2",
+        legs="Atrophy tights +4",
         feet="Leth. Houseaux +3",
         neck={name="Dls. Torque +1", augments={'Path: A',}},
         waist="Embla Sash",
