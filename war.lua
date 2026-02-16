@@ -408,6 +408,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Upheaval"] = set_combine(sets.precast.WS, {
 		ring2 = "Niqmaddu Ring",
+		back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill 		damage +10%',}},
 
 	})
 

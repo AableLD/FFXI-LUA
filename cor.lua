@@ -265,7 +265,7 @@ Camulus.DA  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack
 
     	Camulus.Snap =  { name="Camulus's Mantle", augments={'"Snapshot"+10',}}
 
-	Camulus.DW  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+	10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
+	Camulus.DW  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10',}}
 
     --------------------------------------
     -- Herculean Gear (TH, MAB, etc)
@@ -652,7 +652,7 @@ ammo="Living Bullet",
 
     -- Idle sets
     sets.idle = {
-       head="Malignance Chapeau",
+       head="Null Masque",
     body="Chasseur's Frac +3",
     hands="Malignance Gloves",
     legs="Chas. Culottes +3",
@@ -685,10 +685,10 @@ ammo="Living Bullet",
     neck="Null Loop",
     waist="Reiki Yotai",
     left_ear="Suppanomimi",
-    right_ear="Eabani Earring",
+    right_ear="Cessance Earring",
     left_ring="Epona's Ring",
     right_ring="Murky Ring",
-    back="Null Shawl",
+    back=Camulus.DW,
     }
 
     sets.engaged.DualWield.Acc = set_combine(sets.engaged.DualWield, {

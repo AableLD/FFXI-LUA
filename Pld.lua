@@ -106,7 +106,7 @@ function init_gear_sets()
     right_ear="Loquac. Earring",
     left_ring="Murky Ring",
     right_ring="Kishar Ring",
-    back="Reiki Cloak",}
+    back={ name="Rudianos's Mantle", augments={'HP+60','HP+20','"Fast Cast"+10',}},}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})
 
@@ -448,7 +448,7 @@ function init_gear_sets()
     -- Idle/resting/defense/etc sets
     --------------------------------------
 
-    sets.Reraise = {head="Twilight Helm", body="Twlight Mail"}
+    sets.Reraise = {head="Twilight Helm", body="Twilight Mail"}
     
     sets.resting = {}
     

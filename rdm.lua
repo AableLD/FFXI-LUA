@@ -602,7 +602,7 @@ sets.midcast.Refresh = sets.midcast.Refresh
 
 
     sets.midcast.Cursna = {
-        head="Viti. Chapeau +4",
+        head="Atro. Chapeau +4",
     body="Viti. Tabard +4",
     hands="Leth. Ganth. +2",
     legs="Atro. Tights +4",
