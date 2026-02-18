@@ -493,6 +493,8 @@ sets.midcast["aspir"] = sets.midcast.drain
 	sets.midcast["Flurry II"] = sets.midcast.EnhancingMagicOthers
     sets.midcast["Protect V"] = sets.midcast.EnhancingMagicOthers
     sets.midcast["Shell V"] = sets.midcast.EnhancingMagicOthers
+    sets.midcast["Auspice"] = sets.midcast.EnhancingMagicOthers
+
 
 
 
@@ -503,7 +505,7 @@ sets.midcast.EnhancingMagic = {
         head="Atro. Chapeau +4",
         body="Vitiation tabard +4",
         hands="Viti. Gloves +4",
-        legs="Atrophy tights +4",
+        legs="Telchine Braconi",
         feet="Leth. Houseaux +3",
         neck={name="Dls. Torque +1", augments={'Path: A',}},
         waist="Embla Sash",
@@ -634,7 +636,7 @@ sets.midcast.Refresh = sets.midcast.Refresh
     sets.midcast["Cure III"] = sets.midcast.Cure
     sets.midcast["Cure IV"] = sets.midcast.Cure
     sets.midcast["Cure V"] = sets.midcast.Cure
-
+    sets.midcast["Curega"] = sets.midcast.Cure
 
 
     sets.midcast.Cursna = {
