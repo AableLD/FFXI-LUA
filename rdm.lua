@@ -53,7 +53,20 @@ function init_gear_sets()
     right_ring="Lebeche Ring",
     back="Perimede Cape",
     }
-	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {body="Crepuscular Cloak",left_ring="Kishar Ring",legs="Lengo Pants",hands="Chironic Gloves",})
+	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {   main={ name="Vitiation Sword", augments={'Path: C',}},
+    sub="Archduke's Shield",
+    ammo="Sapience Orb",
+    body="Crepuscular Cloak",
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs={ name="Lengo Pants", augments={'INT+3','"Mag.Atk.Bns."+5',}},
+    feet="Atro. Boots +4",
+    neck="Voltsurge Torque",
+    waist="Witful Belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Veneficium Ring",
+    right_ring="Lebeche Ring",
+    back="Perimede Cape",})
 
 
 sets.midcast.Utsusemi = {
