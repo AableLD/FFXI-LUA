@@ -32,7 +32,7 @@ function init_gear_sets()
       neck="Warder's Charm +1",
       waist="Null Belt",
       left_ear="Alabaster Earring",
-      right_ear="Eabani Earring",
+      right_ear="Infused Earring",
       left_ring="Murky Ring",
         right_ring="Shneddick Ring",
         back="Null Shawl",
@@ -331,7 +331,7 @@ sets.precast.WS["Knights of Round"]
         back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
     }
 
-sets.buff.Saboteur = {hands="Lethargy Gantherots +2"}
+sets.buff.Saboteur = {hands="Leth. Ganth. +3"}
 
     sets.midcast["Gravity II"] = sets.midcast.Gravity
     sets.midcast["Gravity"] = sets.midcast.Gravity
@@ -391,34 +391,15 @@ sets.midcast.EnfeeblingMagicINT = {
     sets.midcast["Slow II"] = sets.midcast.EnfeeblingMagic
     sets.midcast["Paralyze"] = sets.midcast.EnfeeblingMagic
     sets.midcast["Paralyze II"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Silence"] = sets.midcast.EnfeeblingMagic
-
-    sets.midcast.EnfeeblingMagicNI = {
-    main="Daybreak",
-    sub="Ammurapi Shield",
-    ammo="Regal Gem",
-    head="Viti. Chapeau +4",
-    body="Lethargy Sayon +3",
-    hands="Leth. Ganth. +3",
-    legs="Leth. Fuseau +2",
-    feet="Viti. Boots +4",
-    neck={ name="Dls. Torque +1", augments={'Path: A',}},
-    waist="Obstin. Sash",
-    left_ear="Regal Earring",
-    right_ear="Snotra Earring",
-    left_ring="Kishar Ring",
-    right_ring="Metamor. Ring +1",
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},    
-}
-
-    sets.midcast["Addle"] = sets.midcast.EnfeeblingMagicNI
-    sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagicNI
-    sets.midcast["Distract"] = sets.midcast.EnfeeblingMagicNI    
-    sets.midcast["Frazzle"] = sets.midcast.EnfeeblingMagicNI
-    sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagicNI    
-    sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagicNI
-    sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagicNI    
-    sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagicNI
+    sets.midcast["Silence"] = sets.midcast.EnfeeblingMagic  
+    sets.midcast["Addle"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Distract"] = sets.midcast.EnfeeblingMagic    
+    sets.midcast["Frazzle"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagic    
+    sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagic
+    sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagic    
+    sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagic
 
 
     sets.midcast.EnfeeblingMagicDispel = {
@@ -629,20 +610,20 @@ sets.midcast.Refresh = sets.midcast.Refresh
 
     sets.midcast.Cure = {
         main="Daybreak",
-        sub="Sacro Bulwark",
-        ammo="Homiliary",
-        head="Atro. Chapeau +4",
-        body="Bunzi's Robe",
-        hands="Atro. Gloves +4",
-        legs="Atrophy Tights +4",
-        feet="Atro. Boots +4",
-        neck="Nodens Gorget",
-        waist="Embla Sash",
-        left_ear="Mendi. Earring",
-        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
-        left_ring="Murky Ring",
-        right_ring="Defending Ring",
-        back="Solemnity Cape",
+    sub="Sacro Bulwark",
+    ammo="Staunch Tathlum",
+    head="Atro. Chapeau +4",
+    body="Bunzi's Robe",
+    hands="Leth. Ganth. +3",
+    legs="Atro. Tights +4",
+    feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+    neck="Nodens Gorget",
+    waist="Embla Sash",
+    left_ear="Mendi. Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Murky Ring",
+    right_ring="Defending Ring",
+    back="Solemnity Cape",
     }
 
     sets.midcast["Cure II"] = sets.midcast.Cure
