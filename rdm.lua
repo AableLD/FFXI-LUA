@@ -75,7 +75,7 @@ sets.midcast.Utsusemi = {
     ammo="Staunch Tathlum",
     head="Atro. Chapeau +4",
     body="Viti. Tabard +4",
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck={ name="Dls. Torque +1", augments={'Path: A',}},
@@ -251,7 +251,7 @@ sets.precast.WS["Seraph Blade"] = {
     ammo="Ghastly Tathlum +1",
     head="Leth. Chappel +2",
     body="Nyame Mail",
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     legs="Nyame Flanchard",
     feet="Leth. Houseaux +3",
     neck="Fotia Gorget",
@@ -319,7 +319,7 @@ sets.precast.WS["Knights of Round"]
         ammo="Regal Gem",
         head="Viti. Chapeau +4",
         body="Lethargy Sayon +3",
-        hands="Leth. Ganth. +2",
+        hands="Leth. Ganth. +3",
         legs="Atrophy Tights +4",
         feet="Vitiation Boots +4",
         neck="Dls. Torque +1",
@@ -343,7 +343,7 @@ sets.midcast.EnfeeblingMagicINT = {
     ammo="Regal Gem",
     head="Viti. Chapeau +4",
     body="Lethargy Sayon +3",
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     legs="Chironic Hose",
     feet="Viti. Boots +4",
     neck={ name="Dls. Torque +1", augments={'Path: A',}},
@@ -374,7 +374,7 @@ sets.midcast.EnfeeblingMagicINT = {
     ammo="Regal Gem",
     head="Viti. Chapeau +4",
     body="Lethargy Sayon +3",
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     legs="Chironic Hose",
     feet="Viti. Boots +4",
     neck={ name="Dls. Torque +1", augments={'Path: A',}},
@@ -399,7 +399,7 @@ sets.midcast.EnfeeblingMagicINT = {
     ammo="Regal Gem",
     head="Viti. Chapeau +4",
     body="Lethargy Sayon +3",
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     legs="Leth. Fuseau +2",
     feet="Viti. Boots +4",
     neck={ name="Dls. Torque +1", augments={'Path: A',}},
@@ -427,7 +427,7 @@ sets.midcast.EnfeeblingMagicINT = {
     ammo="Regal Gem",
     head="Viti. Chapeau +4",
     body="Atrophy Tabard +4",
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     legs="Atrophy Tights +4",
     feet="Viti. Boots +4",
     neck={ name="Dls. Torque +1", augments={'Path: A',}},
@@ -649,14 +649,15 @@ sets.midcast.Refresh = sets.midcast.Refresh
     sets.midcast["Cure III"] = sets.midcast.Cure
     sets.midcast["Cure IV"] = sets.midcast.Cure
     sets.midcast["Cure V"] = sets.midcast.Cure
-    sets.midcast["Curega"] = sets.midcast.Cure
-
+    sets.midcast["Curaga"] = sets.midcast.Cure
+    sets.midcast["Curaga II"] = sets.midcast.Cure
+    sets.midcast["Curaga III"] = sets.midcast.Cure
 
     sets.midcast.Cursna = {
-        head="Atro. Chapeau +4",
+        head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     body="Viti. Tabard +4",
-    hands="Leth. Ganth. +2",
-    legs="Atro. Tights +4",
+    hands="Leth. Ganth. +3",
+    legs={ name="Vanya Slops", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     feet="Gende. Galosh. +1",
     neck="Debilis Medallion",
     waist="Tempus Fugit",
@@ -678,7 +679,7 @@ sets.midcast.Refresh = sets.midcast.Refresh
         ammo="Ghastly Tathlum +1",
         head="Leth. Chappel +2",
         body="Lethargy Sayon +3",
-        hands="Leth. Ganth. +2",
+        hands="Leth. Ganth. +3",
         legs="Leth. Fuseau +2",
         feet="Vitiation Boots +4",
         neck="Sibyl Scarf",
