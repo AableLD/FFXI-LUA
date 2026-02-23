@@ -24,14 +24,14 @@ function init_gear_sets()
       main="Bolelabunga",
       sub="Archduke's Shield",
       ammo="Homiliary",
-      head="Viti. Chapeau +4",
-      body="Lethargy Sayon +3",
-      hands="Nyame Gauntlets",
-      legs="Nyame Flanchard",
-      feet="Nyame Sollerets",
+      head= { name="Viti. Chapeau +4",priority=91},
+      body={ name="Lethargy Sayon +3",priority=87},
+      hands={ name="Nyame Gauntlets", priority=90},
+      legs={ name="Nyame Flanchard", priority=114},
+      feet={ name="Nyame Sollerets", priority=68},
       neck="Warder's Charm +1",
       waist="Null Belt",
-      left_ear="Alabaster Earring",
+      left_ear={ name="Alabaster Earring", priority=100},
       right_ear="Infused Earring",
       left_ring="Murky Ring",
         right_ring="Shneddick Ring",
@@ -39,35 +39,35 @@ function init_gear_sets()
     }
 
     sets.precast.FC = {
-            ammo="Sapience Orb",
-    head="Atro. Chapeau +4",
-    body="Viti. Tabard +4",
-    hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
-    feet="Nyame Sollerets",
-    neck="Sanctity Necklace",
+    ammo="Sapience Orb",
+    head={ name="Atro. Chapeau +4", priority=74},
+    body={ name="Viti. Tabard +4", priority=84},
+    hands={ name="Nyame Gauntlets", priority=90},
+    legs={ name="Nyame Flanchard", priority=114},
+    feet={ name="Atrophy Boots +4", priority=94},
+    neck={ name="Sanctity Necklass", priority=35},
     waist="Witful Belt",
-    left_ear="Alabaster Earring",
+    left_ear={ name="Alabaster Earring", priority=100},
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
     left_ring="Veneficium Ring",
     right_ring="Lebeche Ring",
     back="Perimede Cape",
     }
-	sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {   main={ name="Vitiation Sword", augments={'Path: C',}},
+    
+    sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {   main={ name="Vitiation Sword", augments={'Path: C',}, priority=120},
     sub="Archduke's Shield",
     ammo="Sapience Orb",
     body="Crepuscular Cloak",
-    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}, priority=25},
     legs={ name="Lengo Pants", augments={'INT+3','"Mag.Atk.Bns."+5',}},
-    feet="Atro. Boots +4",
+    {feet="Atro. Boots +4", priority=92},
     neck="Voltsurge Torque",
     waist="Witful Belt",
-    left_ear="Alabaster Earring",
+    left_ear={ name="Alabaster Earring", priority=100},
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
     left_ring="Veneficium Ring",
     right_ring="Lebeche Ring",
     back="Perimede Cape",})
-
 
 sets.midcast.Utsusemi = {
         main="Mafic Cudgel",
@@ -469,7 +469,7 @@ sets.midcast["aspir"] = sets.midcast.drain
         head="Leth. Chappel +2",
         body="Lethargy Sayon +3",
         hands="Atro. Gloves +4",
-        legs="Atrophy Tights +4",
+        legs="Lethargy fuseau +2",
         feet="Leth. Houseaux +3",
         neck={name="Dls. Torque +1", augments={'Path: A',}},
         waist="Embla Sash",
@@ -488,6 +488,28 @@ sets.midcast["aspir"] = sets.midcast.drain
     sets.midcast["Protect V"] = sets.midcast.EnhancingMagicOthers
     sets.midcast["Shell V"] = sets.midcast.EnhancingMagicOthers
     sets.midcast["Auspice"] = sets.midcast.EnhancingMagicOthers
+
+
+    sets.midcast.Regen = {
+        main="Bolelabunga",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head="Leth. Chappel +2",
+        body="Lethargy Sayon +3",
+        hands="Atro. Gloves +4",
+        legs="Lethargy fuseau +2",
+        feet="Leth. Houseaux +3",
+        neck={name="Dls. Torque +1", augments={'Path: A',}},
+        waist="Embla Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+    }
+
+    sets.midcast["Regen"] = sets.midcast.Regen
+    sets.midcast["Regen II"] = sets.midcast.Regen
 
 
 

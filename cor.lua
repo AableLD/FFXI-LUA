@@ -199,13 +199,13 @@ function job_self_command(cmdParams, eventArgs)
             send_command("@input /echo Equipping " .. weapon_map[normalized_cmd][2])
             equip(weapon_map[normalized_cmd][1])
             if weapon_map[normalized_cmd][3] == "sword-dagger" then
-                windower.send_command('input /lockstyleset 9')
+                windower.send_command('input /lockstyleset 124')
             elseif weapon_map[normalized_cmd][3] == "sword-shield" then
-                windower.send_command('input /lockstyleset 7')
+                windower.send_command('input /lockstyleset 124')
             elseif weapon_map[normalized_cmd][3] == "dagger-shield" then
-                windower.send_command('input /lockstyleset 9')
+                windower.send_command('input /lockstyleset 124')
             elseif weapon_map[normalized_cmd][3] == "sword-sword" then
-                windower.send_command('input /lockstyleset 7')
+                windower.send_command('input /lockstyleset 124')
             end
         elseif gun_map[normalized_cmd] then
             send_command("@input /echo Equipping " .. gun_map[normalized_cmd][2])
@@ -222,21 +222,21 @@ function init_gear_sets()
     --------------------------------------
     -- Start Artifact
     Laksamana_Head = "Laksamana's Tricorne +2" -- Maybe worth upgrading for QD MEVA and M.Acc
-    Laksamana_Body = "Laksamana's Frac +2" -- Maybe worth upgrading for MEVA while R.ATk and Last Standing
+    Laksamana_Body = "Laksamana's Frac +2" 
     -- End Artifact (Other pieces on slip)
     -- Start Relic
-    Lanun_Head = "Lanun Tricorne +4" -- Need to +4 these for Last Stand
+    Lanun_Head = "Lanun Tricorne +4"
     Lanun_Body = "Lanun Frac +4"
-    Lanun_Hands = "Lanun Gants" -- Probably worth upgrading for ranged attacking with more MEVA
+    Lanun_Hands = "Lanun Gants +1" 
     Lanun_Legs = "Lanun Trews +1"
     Lanun_Feet = "Lanun Bottes +3"
     -- End Relic (Other pieces on slip)
     -- Start Empy
-    Chasseur_Head = "Chasseur's Tricorne +2" -- Need to +3 these
-    Chasseur_Body = "Chasseur's Frac +3" -- Need to +3 these
+    Chasseur_Head = "Chasseur's Tricorne +2" 
+    Chasseur_Body = "Chasseur's Frac +3" 
     Chasseur_Hands = "Chasseur's Gants +3" 
-    Chasseur_Legs = "Chasseur's Culottes +3" -- Need to +3 these
-    Chasseur_Feet = "Chasseur's Bottes +3" -- Need to +3 these
+    Chasseur_Legs = "Chasseur's Culottes +3" 
+    Chasseur_Feet = "Chasseur's Bottes +3" 
     Chasseur_Earring = "Chasseur's Earring +1"
     -- End Empy
 
@@ -257,15 +257,11 @@ function init_gear_sets()
 
     Camulus.WSD =   { name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','Weapon skill damage +10%','Damage taken-5%',}}
     
-Camulus.DA  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
-    
-	Camulus.STP  =  { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+	10','"Store TP"+10',}}
+    Camulus.DualWieldWSD = { name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+	6','Weapon skill damage +10%',}}
 
-    	Camulus.DualWieldWSD = { name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+	6','Weapon skill damage +10%',}}
+    Camulus.Snap =  { name="Camulus's Mantle", augments={'"Snapshot"+10',}}
 
-    	Camulus.Snap =  { name="Camulus's Mantle", augments={'"Snapshot"+10',}}
-
-	Camulus.DW  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10',}}
+    Camulus.DW  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10',}}
 
     --------------------------------------
     -- Herculean Gear (TH, MAB, etc)
@@ -338,12 +334,8 @@ Camulus.DA  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack
     -- to be equipped when we use the job ability.
     sets.precast.JA['Wild Card'] = {feet=Lanun_Feet}
     sets.precast.JA['Random Deal'] = {body=Lanun_Body}
-
-    -- Snake eye: We don't bother with the gear slot for this, with 3 merits its a 12% chance.
-    --sets.precast.JA['Snake Eye'] = {legs=Lanun_Legs}
-    -- Fold: Lanun Hands clears both Phantom Rolls (or Bust) 20% of the time per merit level, for a maximum of 100% of the time. 
+    sets.precast.JA['Snake Eye'] = {legs=Lanun_Legs}
     sets.precast.JA['Fold'] = {hands=Lanun_Hands} 
-
     sets.CapacityMantle = {back=capacity_mantle}
 
     sets.TP = {}
@@ -371,7 +363,7 @@ Camulus.DA  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack
         hands=Chasseur_Hands,
         neck="Regal Necklace",
         back=Camulus.MAB,
-	left_ring="Luzaf's Ring",
+	ring1="Luzaf's Ring",
     })
 
     -- Add specific roll gear here. This gear enhances the specific roll being used.
@@ -433,7 +425,7 @@ Camulus.DA  =  { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack
         left_ear="Telos Earring",
         right_ear="Crep. Earring",
         left_ring="Dingir Ring",
-        right_ring="Regal Ring",
+        right_ring="Crepuscular Ring",
         back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +            10','Weapon skill damage +10%','Damage taken-5%',}},
 
     }
@@ -685,7 +677,7 @@ ammo="Living Bullet",
     neck="Null Loop",
     waist="Reiki Yotai",
     left_ear="Suppanomimi",
-    right_ear="Cessance Earring",
+    right_ear="Telos Earring",
     left_ring="Epona's Ring",
     right_ring="Murky Ring",
     back=Camulus.DW,
@@ -1292,11 +1284,11 @@ function use_ra(spell)
 end
 
 function select_default_macro_book()
-    set_macro_page(8, 3)
+    set_macro_page(1, 10)
 end
 
 function set_lockstyle()
-    send_command('wait 4; input /lockstyleset 7')
+    send_command('wait 4; input /lockstyleset 124')
 end
 
 function customize_idle_set(idleSet)
