@@ -578,20 +578,20 @@ function job_self_command(cmdParams, eventArgs)
 	if check_cmd_param(cmdParams,"chango") then
 		equip(sets.chango)
 		send_command('input /lockstyleset 21')
-		set_macro_page(4, 1)
+		set_macro_page(1, 4)
 	elseif check_cmd_param(cmdParams,"shining") then
 		equip(sets.shiningone)
 		send_command('input /lockstyleset 22')
-		set_macro_page(4, 1)
+		set_macro_page(1, 4)
 	elseif check_cmd_param(cmdParams,"naegling") then
 		equip(sets.naegling)
 		send_command('input /lockstyleset 6')
-		set_macro_page(4, 1)
+		set_macro_page(1, 4)
 	elseif check_cmd_param(cmdParams,"lox") then
 		equip(sets.loxmace)
 		-- send_command('input /lockstyleset 1')
 		send_command('input /lockstyleset 30')
-		set_macro_page(4, 1)
+		set_macro_page(1, 4)
 	end
 end
 

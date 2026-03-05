@@ -45,7 +45,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", priority=90},
     legs={ name="Nyame Flanchard", priority=114},
     feet={ name="Atrophy Boots +4", priority=94},
-    neck={ name="Sanctity Necklass", priority=35},
+    neck={ name="Sanctity Necklace", priority=35},
     waist="Witful Belt",
     left_ear={ name="Alabaster Earring", priority=100},
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
