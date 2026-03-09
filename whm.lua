@@ -28,12 +28,12 @@ function init_gear_sets()
     body="Ebers Bliaut +2",
     hands="Ebers Mitts +2",
     legs="Ebers Pant. +2",
-    feet={ name="Chironic Slippers", augments={'AGI+5','Mag. Acc.+3','"Refresh"+1','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
-    neck="Bathy Choker +1",
+    feet="Ebers Duckbills +2",
+    neck="Warder's Charm +1",
     waist="Null Belt",
     left_ear="Alabaster Earring",
     right_ear="Infused Earring",
-    left_ring="Murky Ring",
+    left_ring="Shadow Ring",
     right_ring="Shneddick Ring",
     back="Solemnity Cape",
 }
@@ -143,9 +143,9 @@ sets.precast.WS
     ammo="Ghastly Tathlum +1",
     head="Befouled Crown",
     body="Bunzi's Robe",
-    hands={ name="Chironic Gloves", augments={'Mag. Acc.+20','"Fast Cast"+6','"Mag.Atk.Bns."+14',}},
+    hands="Theophany Mitts +2",
     legs={ name="Chironic Hose", augments={'Accuracy+20','INT+10','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    feet={ name="Medium's Sabots", augments={'MP+30','MND+8','"Cure" potency +2%',}},
+    feet="Theo. Duckbills +2",
     neck="Incanter's Torque",
     waist="Obstin. Sash",
     left_ear="Malignance Earring",
@@ -272,9 +272,32 @@ sets.midcast['Enhancing Magic'] = {
     sets.midcast["Cure III"] = sets.midcast.Cure
     sets.midcast["Cure IV"] = sets.midcast.Cure
     sets.midcast["Cure V"] = sets.midcast.Cure
-    sets.midcast["Curaga"] = sets.midcast.Cure
-    sets.midcast["Curaga II"] = sets.midcast.Cure
-    sets.midcast["Curaga III"] = sets.midcast.Cure
+    sets.midcast["Cure V I"] = sets.midcast.Cure    
+
+
+sets.midcast.Curaga = {
+    main={ name="Queller Rod", augments={'MP+80','"Cure" potency +15%','Enmity-5',}},
+    sub="Archduke's Shield",
+    ammo="Staunch Tathlum",
+    head="Ebers Cap +2",
+    body="Theo. Bliaut +2",
+    hands="Theophany Mitts +2",
+    legs="Ebers Pant. +2",
+    feet={ name="Medium's Sabots", augments={'MP+30','MND+8','"Cure" potency +2%',}},
+    neck="Incanter's Torque",
+    waist="Witful Belt",
+    left_ear="Malignance Earring",
+    right_ear="Mendi. Earring",
+    left_ring="Murky Ring",
+    right_ring="Defending Ring",
+    back="Solemnity Cape",
+}
+
+    sets.midcast["Curaga"] = sets.midcast.Curaga
+    sets.midcast["Curaga II"] = sets.midcast.Curaga
+    sets.midcast["Curaga III"] = sets.midcast.Curaga
+    sets.midcast["Curaga IV"] = sets.midcast.Curaga
+    sets.midcast["Curaga V"] = sets.midcast.Curaga
 
     sets.midcast.Cursna = {
     main="Daybreak",
