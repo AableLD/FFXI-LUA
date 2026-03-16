@@ -300,7 +300,7 @@ sets.midcast.Curaga = {
     sets.midcast["Curaga V"] = sets.midcast.Curaga
 
     sets.midcast.Cursna = {
-    main="Daybreak",
+    main="Yagrush",
     sub="Archduke's Shield",
     ammo="Staunch Tathlum",
     head="Ebers Cap +2",
