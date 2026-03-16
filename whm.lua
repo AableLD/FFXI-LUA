@@ -176,7 +176,7 @@ sets.precast.WS
 
 
 sets.midcast.StatusRemoval = {
-    main="Daybreak",
+    main="Yagrush",
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum",
     head="Ebers Cap +2",
