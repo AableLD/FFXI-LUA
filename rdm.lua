@@ -128,7 +128,7 @@ sets.midcast.Aquaveil = {
         right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
         left_ring="Kishar Ring",
         right_ring="Defending Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
     }
 
 sets.midcast["Aquaveil"] = sets.midcast.Aquaveil
@@ -477,7 +477,7 @@ sets.midcast["aspir"] = sets.midcast.drain
         right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
         left_ring="Murky Ring",
         right_ring="Defending Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
     }
 
     sets.midcast["Haste II"] = sets.midcast.EnhancingMagicOthers
@@ -505,7 +505,7 @@ sets.midcast["aspir"] = sets.midcast.drain
         right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
         left_ring="Murky Ring",
         right_ring="Defending Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
     }
 
     sets.midcast["Regen"] = sets.midcast.Regen
@@ -529,7 +529,7 @@ sets.midcast.EnhancingMagic = {
         right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
         left_ring="Murky Ring",
         right_ring="Defending Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
     }
 
 sets.midcast["Blink"] = sets.midcast.EnhancingMagic
@@ -597,7 +597,7 @@ sets.midcast.Gain = {
         right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
         left_ring="Murky Ring",
         right_ring="Defending Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},w
     }
 
 sets.midcast["Gain-INT"] = sets.midcast.Gain
@@ -623,7 +623,7 @@ sets.midcast["Gain-DEX"] = sets.midcast.Gain
         right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
         left_ring="Murky Ring",
         right_ring="Defending Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
     }
 
 sets.midcast.Refresh = sets.midcast.Refresh
@@ -724,6 +724,19 @@ sets.midcast["Blizzard II"] = sets.midcast.ElementalMagic
 sets.midcast["Blizzard III"] = sets.midcast.ElementalMagic
 sets.midcast["Blizzard IV"] = sets.midcast.ElementalMagic
 sets.midcast["Blizzard V"] = sets.midcast.ElementalMagic
+sets.midcast["Firaga"] = sets.midcast.ElementalMagic
+sets.midcast["Firaga II"] = sets.midcast.ElementalMagic
+sets.midcast["Blizzaga"] = sets.midcast.ElementalMagic
+sets.midcast["Blizzaga II"] = sets.midcast.ElementalMagic
+sets.midcast["Aeroga"] = sets.midcast.ElementalMagic
+sets.midcast["Aeroga II"] = sets.midcast.ElementalMagic
+sets.midcast["Stonega"] = sets.midcast.ElementalMagic
+sets.midcast["Stonega II"] = sets.midcast.ElementalMagic
+sets.midcast["Thundaga"] = sets.midcast.ElementalMagic
+sets.midcast["Thundaga II"] = sets.midcast.ElementalMagic
+sets.midcast["Waterga"] = sets.midcast.ElementalMagic
+sets.midcast["Waterga II"] = sets.midcast.ElementalMagic
+
 
 sets.midcast.Impact= {
     main="Daybreak",

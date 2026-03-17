@@ -40,7 +40,7 @@ function init_gear_sets()
 
     sets.precast.FC = {
     main="Daybreak",
-    sub="Archduke's Shield",
+    sub="Chanter's Shield",
     ammo="Sapience Orb",
     head="Ebers Cap +2",
     body="Inyanga Jubbah +2",
@@ -261,7 +261,7 @@ sets.midcast['Enhancing Magic'] = {
     feet={ name="Medium's Sabots", augments={'MP+30','MND+8','"Cure" potency +2%',}},
     neck="Incanter's Torque",
     waist="Witful Belt",
-    left_ear="Malignance Earring",
+    left_ear="Glorious Earring",
     right_ear="Mendi. Earring",
     left_ring="Murky Ring",
     right_ring="Defending Ring",
@@ -286,7 +286,7 @@ sets.midcast.Curaga = {
     feet={ name="Medium's Sabots", augments={'MP+30','MND+8','"Cure" potency +2%',}},
     neck="Incanter's Torque",
     waist="Witful Belt",
-    left_ear="Malignance Earring",
+    left_ear="Glorious Earring",
     right_ear="Mendi. Earring",
     left_ring="Murky Ring",
     right_ring="Defending Ring",
@@ -311,7 +311,7 @@ sets.midcast.Curaga = {
     neck="Debilis Medallion",
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Loquac. Earring",
+    right_ear="Ebers Earring",
     left_ring="Menelaus's Ring",
     right_ring="Haoma's Ring",
     back="Oretan. Cape +1",
@@ -330,7 +330,7 @@ function select_default_macro_book()
 end
 
 function set_lockstyle()
-    send_command('wait 4; input /lockstyleset 171')
+    send_command('wait 4; input /lockstyleset 180')
 end
 
 function job_precast(spell, action, spellMap, eventArgs)
