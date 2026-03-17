@@ -46,14 +46,14 @@ function init_gear_sets()
     body="Inyanga Jubbah +2",
     hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
     legs={ name="Lengo Pants", augments={'INT+3','"Mag.Atk.Bns."+5',}},
-    feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+    feet="Regal Pumps +1",
     neck="Voltsurge Torque",
     waist="Witful Belt",
     left_ear="Malignance Earring",
     right_ear="Loquac. Earring",
     left_ring="Kishar Ring",
     right_ring="Lebeche Ring",
-    back="Perimede Cape",
+    back="Alaunus's Cape",
 }
     
    
@@ -272,7 +272,7 @@ sets.midcast['Enhancing Magic'] = {
     sets.midcast["Cure III"] = sets.midcast.Cure
     sets.midcast["Cure IV"] = sets.midcast.Cure
     sets.midcast["Cure V"] = sets.midcast.Cure
-    sets.midcast["Cure V I"] = sets.midcast.Cure    
+    sets.midcast["Cure VI"] = sets.midcast.Cure    
 
 
 sets.midcast.Curaga = {
@@ -314,7 +314,7 @@ sets.midcast.Curaga = {
     right_ear="Ebers Earring",
     left_ring="Menelaus's Ring",
     right_ring="Haoma's Ring",
-    back="Oretan. Cape +1",
+    back="Alaunus's Cape",
 }
 
 
