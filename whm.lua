@@ -39,7 +39,7 @@ function init_gear_sets()
 }
 
     sets.precast.FC = {
-    main="Daybreak",
+    main="Gada",
     sub="Chanter's Shield",
     ammo="Sapience Orb",
     head="Ebers Cap +2",
@@ -81,7 +81,7 @@ sets.midcast.Aquaveil = {
     main="Mafic Cudgel",
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum",
-    head="Null Masque",
+    head="Chironic Hat",
     body="Bunzi's Robe",
     hands="Dynasty Mitts",
     legs="Shedir Seraweels",
