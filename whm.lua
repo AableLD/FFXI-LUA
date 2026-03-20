@@ -119,18 +119,83 @@ sets.engaged = {
 
 sets.precast.WS
  = {
-    main="Maxentius",
-    sub="Genmei Shield",
     ammo="Vanir Battery",
     head="Null Masque",
     body="Bunzi's Robe",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Null Loop",
-    waist="Acuity Belt +1",
+    neck="Rep. Plat. Medal",
+    waist="Grunfeld Rope",
     left_ear="Brutal Earring",
     right_ear="Telos Earring",
+    left_ring="Cornelia's Ring",
+    right_ring="Rufescent Ring",
+    back="Null Shawl",
+}
+
+
+sets.precast.WS["Black Halo"] ={
+    ammo="Crepuscular Pebble",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Grunfeld Rope",
+    left_ear="Regal Earring",
+    right_ear="Moonshade Earring",
+    left_ring="Cornelia's Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",
+}
+
+
+sets.precast.WS["Mystic Boon"] ={
+    ammo="Crepuscular Pebble",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Grunfeld Rope",
+    left_ear="Regal Earring",
+    right_ear="Moonshade Earring",
+    left_ring="Cornelia's Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",
+}
+
+
+sets.precast.WS["Hexa Strike"] ={
+    ammo="Crepuscular Pebble",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Brutal Earring",
+    right_ear="Moonshade Earring",
+    left_ring="Cornelia's Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",
+}
+
+sets.precast.WS["Realmrazer"] ={
+    ammo="Crepuscular Pebble",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Glorious Earring",
+    right_ear="Moonshade Earring",
     left_ring="Cornelia's Ring",
     right_ring="Rufescent Ring",
     back="Null Shawl",
