@@ -260,7 +260,7 @@ sets.midcast.StatusRemoval = {
 
 
 sets.midcast.BarElement= {
-    main="Daybreak",
+    main="Beneficus",
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum",
     head="Ebers Cap +2",
