@@ -463,7 +463,7 @@ sets.midcast.drain = {
 sets.midcast["aspir"] = sets.midcast.drain
 
     sets.midcast.EnhancingMagicOthers = {
-        main="Daybreak",
+        main={ name="Colada", augments={'Enh. Mag. eff. dur. +4','"Mag.Atk.Bns."+8','DMG:+2',}},
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
         head="Leth. Chappel +2",
@@ -515,7 +515,7 @@ sets.midcast["aspir"] = sets.midcast.drain
 
 
 sets.midcast.EnhancingMagic = {
-        main="Daybreak",
+        main={ name="Colada", augments={'Enh. Mag. eff. dur. +4','"Mag.Atk.Bns."+8','DMG:+2',}},
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
         head="Atro. Chapeau +4",
