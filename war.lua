@@ -720,7 +720,7 @@ windower.register_event(
 
 
 function select_default_macro_book()
-    set_macro_page(4, 1)
+    set_macro_page(1, 4)
 end
 
 function set_lockstyle()
