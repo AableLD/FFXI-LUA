@@ -362,6 +362,7 @@ function init_gear_sets()
         head=Lanun_Head,
         hands=Chasseur_Hands,
         neck="Regal Necklace",
+	legs="Desultor Tassets",
         back=Camulus.MAB,
 	ring1="Luzaf's Ring",
     })
