@@ -248,6 +248,15 @@ sets.engaged.SubtleBlow = {
         hands="Kasuga Kote +3",
     }
 
+sets.Meditate = {
+    head="Wakido Kabuto +2",
+    hands="Sakonji Kote +1",
+    neck="Rep. Plat. Medal",
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
+}
+
+
+
     sets.CP = {
         back="Mecisto. Mantle",
     }
