@@ -21,7 +21,7 @@ end
 function init_gear_sets()
 
  sets.idle = {
-    main="Bolelabunga",
+    main="Daybreak",
     sub="Archduke's Shield",
     ammo="Homiliary",
     head="Null Masque",
