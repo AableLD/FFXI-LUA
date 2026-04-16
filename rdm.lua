@@ -426,20 +426,18 @@ sets.midcast.Dispel = sets.midcast.EnfeeblingMagicDispel
 sets.midcast["Dispelga"] = sets.midcast.EnfeeblingMagicDispel
 
     sets.midcast.AbsorbTP = {
-    main="Bunzi's Rod",
-    sub="Ammurapi Shield",
     ammo="Regal Gem",
     head="Atro. Chapeau +4",
     body="Viti. Tabard +4",
     hands="Atro. Gloves +4",
-    legs="Atrophy Tights +4",
+    legs="Atro. Tights +4",
     feet="Atro. Boots +4",
     neck="Null Loop",
     waist="Null Belt",
-    left_ear="Regal Earring",
+    left_ear="Malignance Earring",
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
-    left_ring="Kishar Ring",
-    right_ring="Metamor. Ring +1",
+    left_ring="Metamor. Ring +1",
+    right_ring="Lebeche Ring",
     back="Null Shawl",
 }
 
