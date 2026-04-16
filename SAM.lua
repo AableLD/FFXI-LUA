@@ -76,7 +76,7 @@ sets.engaged.SubtleBlow = {
 		hands="Wakido Kote +2",
 		legs={ name="Mpaca's Hose", augments={'Path: A',}},
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
-		neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+		neck="Bathy Choker +1",
 		waist="Sailfi Belt +1",
 		right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
 		right_ring="Niqmaddu Ring",
@@ -95,7 +95,7 @@ sets.engaged.SubtleBlow = {
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
 		left_ring="Cornelia's Ring",
-		right_ring="Niqmaddu's Ring",
+		right_ring="Niqmaddu Ring",
 		back={name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
 		
 	sets.precast.WS.ATKCAP = {
@@ -105,12 +105,12 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Mpaca's Hose", augments={'Path: A',}},
 		feet="Kas. Sune-Ate +3",
-		neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+		neck="Republican Platinum Medal",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
 		left_ring="Cornelia's Ring",
-		right_ring="Niqmaddu's Ring",
+		right_ring="Niqmaddu Ring",
 		back={name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
 		
 		
@@ -121,7 +121,7 @@ sets.engaged.SubtleBlow = {
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+		neck="Republican Platinum Medal",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -137,7 +137,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+		neck="Republican Platinum Medal",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -153,7 +153,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+		neck="Republican Platinum Medal",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -164,39 +164,9 @@ sets.engaged.SubtleBlow = {
 		
 	sets.precast.WS['Sonic Thrust'] = sets.precast.WS['Impulse Drive']
 	
-	sets.precast.WS['Stardiver'] = {
-	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head={ name="Mpaca's Cap", augments={'Path: A',}},
-		body="Mpaca's Doublet",
-		hands="Mpaca's Gloves",
-		legs={ name="Mpaca's Hose", augments={'Path: A',}},
-		feet="Mpaca's Boots",
-		neck="Fotia Gorget",
-		waist="Fotia Belt",
-		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring="Niqmaddu Ring",
-		right_ring="Regal Ring",
-		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
-		
-	sets.precast.WS['Stardiver'].ATKCAP = {
-	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head={ name="Mpaca's Cap", augments={'Path: A',}},
-		body="Mpaca's Doublet",
-		hands="Mpaca's Gloves",
-		legs={ name="Mpaca's Hose", augments={'Path: A',}},
-		feet="Kas. Sune-Ate +3",
-		neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
-		waist="Fotia Belt",
-		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring="Niqmaddu Ring",
-		right_ring="Sroda Ring",
-		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
-		
-    
+	
     sets.precast.WS['Tachi: Ageha'] = {
-		ammo="Pemphredo Tathlum",
+		ammo="Knobkierrie",
 		head="Kasuga Kabuto +3",
 		body="Kasuga Domaru +3",
 		hands="Kasuga Kote +3",
@@ -205,7 +175,7 @@ sets.engaged.SubtleBlow = {
 		neck="Sanctity Necklace",
 		waist="Eschan Stone",
 		left_ear="Crep. Earring",
-		right_ear={ name="Kasuga Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Weapon skill damage +3%','STR+7 DEX+7',}},
+		right_ear="Kasuga Earring +1",
 		left_ring="Cornelia's Ring",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
@@ -222,28 +192,13 @@ sets.engaged.SubtleBlow = {
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Friomisi Earring",
 		left_ring="Cornelia's Ring",
-		right_ring="Naqmaddu's Ring",
+		right_ring="Niqmaddu Ring",
 		back="Null Shawl",}
 		
 	sets.precast.WS['Tachi: Goten'] = sets.precast.WS['Tachi: Jinpu']
 	sets.precast.WS['Tachi: Kagero'] = sets.precast.WS['Tachi: Jinpu']
 	sets.precast.WS['Tachi: Koki'] = sets.precast.WS['Tachi: Jinpu']
 	
-    sets.precast.WS['Aeolian Edge'] = {
-		ammo="Knobkierrie",
-		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Sibyl Scarf",
-		waist="Orpheus's Sash",
-		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		right_ear="Friomisi Earring",
-		left_ring="Epaminondas's Ring",
-		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
-
     sets.Sekkanoki = {
         hands="Kasuga Kote +3",
     }
@@ -261,25 +216,12 @@ sets.Meditate = {
         back="Mecisto. Mantle",
     }
 
-    sets.precast.FC = {
-		ammo = "Impatiens",
-		neck = "Baetyl Pendant",
-		ear1 = "Loquac. Earring",
-		ear2 = "Sanare Earring",
-		-- body = "Odyssean chestplate",
-		hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
-		-- ring1 = "Weatherspoon ring",
-		-- ring2 = "Defending ring",
-		-- back = "Xucau mantle",
-		waist = "Flume belt",
-		legs = "Limbo Trousers",
-		--legs = "Eschite cuisses",
-		-- feet = "Odyssean greaves"
-	}
-
     sets.precast.JA["Meditate"] = {
-        head = "Wakido Kabuto +1",
-    }
+     head="Wakido Kabuto +2",
+    hands="Sakonji Kote +1",
+    neck="Rep. Plat. Medal",
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
+}
 
 end
 

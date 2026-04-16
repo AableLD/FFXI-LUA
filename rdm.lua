@@ -20,6 +20,8 @@ end
 
 function init_gear_sets()
 
+  sets.Obi = { waist='Hachirin-no-Obi' }
+
  sets.idle = {
     main={ name="Colada", augments={'Pet: INT+2','Sklchn.dmg.+2%','"Refresh"+2','DMG:+5',}},
     sub="Archduke's Shield",
@@ -758,6 +760,15 @@ sets.midcast.Impact= {
 sets.midcast["Impact"] = sets.midcast.Impact
 
 end
+
+function job_post_midcast(spell, action, spellMap, eventArgs)
+    if spell.skill == 'Elemental Magic' then
+      if (spell.element == world.day_element or spell.element == world.weather_element) then
+          equip(sets.Obi)
+      end
+    end
+end
+
 
 function select_default_macro_book()
     set_macro_page(1, 18)
