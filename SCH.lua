@@ -385,7 +385,7 @@ function get_sets()
     right_ear="Earthcry Earring",
     left_ring="Kishar Ring",
     right_ring="Lebeche Ring",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
+ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
     })
       
     -- Curing Precast, Cure Spell Casting time -
@@ -433,7 +433,7 @@ function get_sets()
 	-----------------------------------------------------------------------------------------------
     -- Make sure you have a non weather obi in this set. Helix get bonus naturally no need Obi.	
     sets.midcast.DarkHelix = {main="Bunzi's Rod",
-    sub="Ammurapi Shield",
+    sub="Culminus",
     ammo="Ghastly Tathlum +1",
     head="Pixie Hairpin +1",
     body="Shamash Robe",
@@ -446,12 +446,12 @@ function get_sets()
     right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
     left_ring="Archon Ring",
     right_ring="Mallquis Ring",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
 
     }
     -- Make sure you have a non weather obi in this set. Helix get bonus naturally no need Obi.	
     sets.midcast.Helix = {   main="Bunzi's Rod",
-    sub="Ammurapi Shield",
+    sub="Culminus",
     ammo="Ghastly Tathlum +1",
     head="Arbatel Bonnet +2",
     body="Shamash Robe",
@@ -464,8 +464,7 @@ function get_sets()
     right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
     left_ring="Freke Ring",
     right_ring="Mallquis Ring",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
-
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
 
     }	
 
@@ -484,8 +483,7 @@ function get_sets()
     right_ear="Malignance Earring",
     left_ring="Freke Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
-
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
     }
 
 	sets.midcast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown"}
@@ -504,11 +502,11 @@ function get_sets()
     right_ear="Malignance Earring",
     left_ring="Freke Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
-
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
     }
     -- used with toggle, default: F10
     -- Pieces to swap from freen nuke to Magic Burst
+
     sets.midcast.MB.normal = set_combine(sets.midcast.nuking.normal, {
 
     main="Bunzi's Rod",
@@ -525,8 +523,8 @@ function get_sets()
     right_ear="Malignance Earring",
     left_ring="Freke Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},})
-	
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},	})
+
     sets.midcast.nuking.acc = {
 main="Bunzi's Rod",
     sub="Ammurapi Shield",
@@ -542,8 +540,7 @@ main="Bunzi's Rod",
     right_ear="Malignance Earring",
     left_ring="Freke Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
-    }
+ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},   }
 
     -- used with toggle, default: F10
     -- Pieces to swap from freen nuke to Magic Burst
@@ -562,8 +559,7 @@ main="Bunzi's Rod",
     right_ear="Malignance Earring",
     left_ring="Freke Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
-    })	
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},    })	
 	
     -- Enfeebling
 	sets.midcast["Stun"] = {
@@ -584,8 +580,7 @@ main="Bunzi's Rod",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
-
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
     }
 
     sets.midcast.MndEnfeebling = {main="Mpaca's Staff",
@@ -658,8 +653,7 @@ main="Bunzi's Rod",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},  }
-	-- Focus on Regen Duration 	
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},}	-- Focus on Regen Duration 	
     sets.midcast.regen.duration = set_combine(sets.midcast.regen.hybrid,{
 
    main={ name="Pedagogy Staff", augments={'Path: C',}},
@@ -676,7 +670,7 @@ main="Bunzi's Rod",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}}, }) 
+back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}}, }) 
 	-- Focus on Regen Potency 	
     sets.midcast.regen.potency = set_combine(sets.midcast.regen.hybrid,{
 
@@ -694,7 +688,7 @@ main="Bunzi's Rod",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
     right_ring="Metamor. Ring +1",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}}, }) 
+ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}}, }) 
 	
     ------------
     -- Aftercast
