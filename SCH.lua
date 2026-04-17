@@ -87,7 +87,7 @@ nukeModes = M('normal', 'acc')
 -- Setting this to true will stop the text spam, and instead display modes in a UI.
 -- Currently in construction.
 use_UI = true
-hud_x_pos = 1400    --important to update these if you have a smaller screen
+hud_x_pos = 1000    --important to update these if you have a smaller screen
 hud_y_pos = 200     --important to update these if you have a smaller screen
 hud_draggable = true
 hud_font_size = 10
@@ -268,14 +268,14 @@ function get_sets()
     ------------	
     -- Gear that needs to be worn to **actively** enhance a current player buff.
     -- Fill up following with your avaible pieces.
-    sets.buff['Rapture'] = {head="Arbatel bonnet +1"}
-    sets.buff['Perpetuance'] = {hands="Arbatel Bracers +1"}
-    sets.buff['Immanence'] = {hands="Arbatel Bracers +1"}
-    sets.buff['Penury'] = {legs="Arbatel Pants +1"}
-    sets.buff['Parsimony'] = {legs="Arbatel Pants +1"}
-    sets.buff['Celerity'] = {feet="Peda. Loafers +3"}
-    sets.buff['Alacrity'] = {feet="Peda. Loafers +3"}
-    sets.buff['Klimaform'] = {feet="Arbatel Loafers +1"}	
+    sets.buff['Rapture'] = {head="Arbatel bonnet +2"}
+    sets.buff['Perpetuance'] = {hands="Arbatel Bracers +2"}
+    sets.buff['Immanence'] = {hands="Arbatel Bracers +2"}
+    sets.buff['Penury'] = {legs="Arbatel Pants +2"}
+    sets.buff['Parsimony'] = {legs="Arbatel Pants +2"}
+    sets.buff['Celerity'] = {feet="Peda. Loafers"}
+    sets.buff['Alacrity'] = {feet="Peda. Loafers"}
+    sets.buff['Klimaform'] = {feet="Arbatel Loafers +2"}	
     -- Ebulience set empy now as we get better damage out of a good Merlinic head
     sets.buff['Ebullience'] = {} -- I left it there still if it becomes needed so the SCH.lua file won't need modification should you want to use this set
    
@@ -412,8 +412,8 @@ function get_sets()
     ---------------------
 
     sets.precast["Tabula Rasa"] = {legs="Pedagogy Pants"}
-    sets.precast["Enlightenment"] = {body="Peda. Gown"}	 
-    sets.precast["Sublimation"] = {head="Acad. Mortar. +4", body="Peda. Gown"}	 
+    sets.precast["Enlightenment"] = {body="Pedagogy Gown"}	 
+    sets.precast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown"}	 
 
 	
 	----------
@@ -432,15 +432,40 @@ function get_sets()
 	-- Belt that isn't Obi.
 	-----------------------------------------------------------------------------------------------
     -- Make sure you have a non weather obi in this set. Helix get bonus naturally no need Obi.	
-    sets.midcast.DarkHelix = {head="Pixie Hairpin +1",
+    sets.midcast.DarkHelix = {main="Bunzi's Rod",
+    sub="Ammurapi Shield",
+    ammo="Ghastly Tathlum +1",
+    head="Pixie Hairpin +1",
+    body="Shamash Robe",
+    hands="Arbatel Bracers +2",
+    legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
+    neck="Sibyl Scarf",
     waist="Eschan Stone",
+    left_ear="Crematio Earring",
+    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
     left_ring="Archon Ring",
+    right_ring="Mallquis Ring",
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
 
     }
     -- Make sure you have a non weather obi in this set. Helix get bonus naturally no need Obi.	
-    sets.midcast.Helix = {   feet="Arbatel Loafers +2",
+    sets.midcast.Helix = {   main="Bunzi's Rod",
+    sub="Ammurapi Shield",
+    ammo="Ghastly Tathlum +1",
+    head="Arbatel Bonnet +2",
+    body="Shamash Robe",
+    hands="Arbatel Bracers +2",
+    legs="Arbatel Pants +2",
+    feet="Arbatel Loafers +2",
+    neck="Sibyl Scarf",
     waist="Eschan Stone",
+    left_ear="Crematio Earring",
+    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
+    left_ring="Freke Ring",
+    right_ring="Mallquis Ring",
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
+
 
     }	
 
@@ -463,7 +488,7 @@ function get_sets()
 
     }
 
-	sets.midcast["Sublimation"] = {head="Acad. Mortar. +4", body="Peda. Gown"}
+	sets.midcast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown"}
     
     sets.midcast.nuking.normal = {main="Bunzi's Rod",
     sub="Ammurapi Shield",
