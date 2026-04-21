@@ -152,6 +152,10 @@ refreshType = idleModes[1]      -- leave this as is
 -- Optional. Swap to your sch macro sheet / book
 set_macros(1,17) -- Sheet, Book
 
+function set_lockstyle()
+    send_command('wait 4; input /lockstyleset 168')
+end
+
 
 -------------------------------------------------------------                                        
 --      ,---.                         |         
@@ -193,7 +197,7 @@ function get_sets()
     sub="Khonsu",
     ammo="Homiliary",
     head="Acad. Mortar. +4",
-    body="Pedagogy Gown",
+    body="Pedagogy Gown +1",
     hands="Nyame Gauntlets",
     legs="Arbatel Pants +2",
     feet="Nyame Sollerets",
@@ -298,7 +302,7 @@ function get_sets()
     sets.precast.casting = {main={ name="Grioavolr", augments={'Pet: "Dbl.Atk."+3 Pet: Crit.hit rate +3','"Fast Cast"+4',}},
     sub="Khonsu",
     ammo="Sapience Orb",
-    head="Acad. Mortar. +4",
+    head="Pedagogy Mortarboard +1",
     body="Acad. Gown +4",
     hands="Acad. Bracers +3",
     legs={ name="Lengo Pants", augments={'INT+3','"Mag.Atk.Bns."+5',}},
@@ -335,7 +339,7 @@ function get_sets()
     sets.precast.grimoire = {main={ name="Grioavolr", augments={'Pet: "Dbl.Atk."+3 Pet: Crit.hit rate +3','"Fast Cast"+4',}},
     sub="Khonsu",
     ammo="Sapience Orb",
-    head="Peda. M.Board",
+    head="Peda. M.Board +1",
     body="Acad. Gown +4",
     hands="Acad. Bracers +3",
     legs={ name="Lengo Pants", augments={'INT+3','"Mag.Atk.Bns."+5',}},
@@ -356,7 +360,7 @@ function get_sets()
     sub="Khonsu",
     ammo="Sapience Orb",
     head="Befouled Crown",
-    body="Pedagogy Gown",
+    body="Pedagogy Gown +1",
     hands="Acad. Bracers +3",
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
     feet="Peda. Loafers",
@@ -366,7 +370,7 @@ function get_sets()
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
     right_ring="Lebeche Ring",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
+     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
 
     })
   
@@ -375,7 +379,7 @@ function get_sets()
     sub="Khonsu",
     ammo="Sapience Orb",
     head="Befouled Crown",
-    body="Pedagogy Gown",
+    body="Pedagogy Gown +1",
     hands="Acad. Bracers +3",
     legs="Shedir Seraweels",
     feet="Peda. Loafers",
@@ -393,7 +397,7 @@ function get_sets()
     sub="Chanter's Shield",
     ammo="Sapience Orb",
     head="Acad. Mortar. +4",
-    body="Arbatel Gown +1",
+    body="Arbatel Gown +2",
     hands="Acad. Bracers +3",
     legs="Acad. Pants +3",
     feet="Acad. Loafers +3",
@@ -411,9 +415,9 @@ function get_sets()
     -- Ability Precasting
     ---------------------
 
-    sets.precast["Tabula Rasa"] = {legs="Pedagogy Pants"}
-    sets.precast["Enlightenment"] = {body="Pedagogy Gown"}	 
-    sets.precast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown"}	 
+    sets.precast["Tabula Rasa"] = {legs="Pedagogy Pants +1"}
+    sets.precast["Enlightenment"] = {body="Pedagogy Gown +1"}	 
+    sets.precast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown +1"}	 
 
 	
 	----------
@@ -436,7 +440,7 @@ function get_sets()
     sub="Culminus",
     ammo="Ghastly Tathlum +1",
     head="Pixie Hairpin +1",
-    body="Shamash Robe",
+    body="Arbatel gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
@@ -454,7 +458,7 @@ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic
     sub="Culminus",
     ammo="Ghastly Tathlum +1",
     head="Arbatel Bonnet +2",
-    body="Shamash Robe",
+    body="Arbatel gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
@@ -473,7 +477,7 @@ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic
     sub="Ammurapi Shield",
     ammo="Ghastly Tathlum +1",
     head="Arbatel Bonnet +2",
-    body="Shamash Robe",
+    body="Arbatel gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
@@ -486,13 +490,13 @@ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic
 back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
     }
 
-	sets.midcast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown"}
+	sets.midcast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown +1"}
     
     sets.midcast.nuking.normal = {main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Ghastly Tathlum +1",
     head="Arbatel Bonnet +2",
-    body="Shamash Robe",
+    body="Arbatel gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
@@ -513,7 +517,7 @@ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic
     sub="Ammurapi Shield",
     ammo="Ghastly Tathlum +1",
     head="Arbatel Bonnet +2",
-    body="Shamash Robe",
+    body="Arbatel gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
@@ -530,7 +534,7 @@ main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Ghastly Tathlum +1",
     head="Arbatel Bonnet +2",
-    body="Shamash Robe",
+    body="Arbatel gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
@@ -549,7 +553,7 @@ main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Ghastly Tathlum +1",
     head="Arbatel Bonnet +2",
-    body="Shamash Robe",
+    body="Arbatel gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
     feet="Arbatel Loafers +2",
