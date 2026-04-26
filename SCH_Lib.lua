@@ -309,7 +309,7 @@ end
 function toggleHudStyle( useLightMode )
     texts.clear(main_text_hub)
     if useLightMode then
-        hud_x_pos = 0     
+        hud_x_pos = 100     
         hud_y_pos = 0
         hud_font_size = 8
         hud_padding = 2

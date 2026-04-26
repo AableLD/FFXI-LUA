@@ -509,7 +509,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet="Lanun Bottes +4",
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
-    waist="Anrin Obi",
+    waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear="Moonshade Earring",
     left_ring="Dingir Ring",
