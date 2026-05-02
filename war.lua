@@ -136,7 +136,7 @@ function init_gear_sets()
 	-- The head could be useful for slightly longer aggressor, but we opt not to.
 	-- End Artifact (Other pieces on slip)
 	-- Start Relic
-	Agoge_Head = "Agoge Mask +3"
+	Agoge_Head = "Agoge Mask +4"
 	Agoge_Body = "Agoge Lorica +1"
 	Agoge_Hands = "Agoge Mufflers"
 	Agoge_Feet = "Agoge Calligae +1"
