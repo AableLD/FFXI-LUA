@@ -86,8 +86,8 @@ sets.engaged.SubtleBlow = {
     sets.precast.WS = {
 		ammo="Knobkierrie",
 		head={ name="Mpaca's Cap", augments={'Path: A',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		body="Sakonji Domaru +4",
+		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Rep. Plat. Medal",
@@ -101,7 +101,7 @@ sets.engaged.SubtleBlow = {
 	sets.precast.WS.ATKCAP = {
 		ammo="Crepuscular Pebble",
 		head={ name="Mpaca's Cap", augments={'Path: A',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
+	        body="Sakonji Domaru +4",
 		hands="Kasuga Kote +3",
 		legs={ name="Mpaca's Hose", augments={'Path: A',}},
 		feet="Kas. Sune-Ate +3",
@@ -117,8 +117,8 @@ sets.engaged.SubtleBlow = {
 	sets.precast.WS['Tachi: Shoha'] = {
 		ammo="Knobkierrie",
 		head={ name="Mpaca's Cap", augments={'Path: A',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		body="Sakonji Domaru +4",
+		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Republican Platinum Medal",
@@ -133,7 +133,7 @@ sets.engaged.SubtleBlow = {
 	sets.precast.WS['Tachi: Rana'] = {
 		ammo="Knobkierrie",
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
+		body="Sakonji Domaru +4",
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -184,7 +184,7 @@ sets.engaged.SubtleBlow = {
 		ammo="Knobkierrie",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Rep. Plat. Medal",
