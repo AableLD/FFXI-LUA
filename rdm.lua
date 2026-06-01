@@ -389,6 +389,7 @@ sets.midcast.EnfeeblingMagicINT = {
 }
 
 
+
     sets.midcast["Slow"] = sets.midcast.EnfeeblingMagic
     sets.midcast["Slow II"] = sets.midcast.EnfeeblingMagic
     sets.midcast["Paralyze"] = sets.midcast.EnfeeblingMagic
@@ -396,12 +397,33 @@ sets.midcast.EnfeeblingMagicINT = {
     sets.midcast["Silence"] = sets.midcast.EnfeeblingMagic  
     sets.midcast["Addle"] = sets.midcast.EnfeeblingMagic
     sets.midcast["Addle II"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Distract"] = sets.midcast.EnfeeblingMagic    
-    sets.midcast["Frazzle"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagic    
-    sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagic
-    sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagic    
-    sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagic
+
+
+
+sets.midcast.EnfeeblingMagicSkill = {
+    main="Contemplator +1",
+    sub="Enki Strap",
+    ammo="Regal Gem",
+    head="Viti. Chapeau +4",
+    body="Lethargy Sayon +3",
+    hands="Leth. Ganth. +3",
+    legs={ name="Chironic Hose", augments={'"Fast Cast"+5','MND+10','Mag. Acc.+13',}},
+    feet="Viti. Boots +4",
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
+    waist="Obstin. Sash",
+    left_ear="Regal Earring",
+    right_ear="Snotra Earring",
+    left_ring="Kishar Ring",
+    right_ring="Metamor. Ring +1",
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+}
+
+    sets.midcast["Distract"] = sets.midcast.EnfeeblingMagicSkill    
+    sets.midcast["Frazzle"] = sets.midcast.EnfeeblingMagicSkill
+    sets.midcast["Distract II"] = sets.midcast.EnfeeblingMagicSkill
+    sets.midcast["Frazzle II"] = sets.midcast.EnfeeblingMagicSkill
+    sets.midcast["Distract III"] = sets.midcast.EnfeeblingMagicSkill    
+    sets.midcast["Frazzle III"] = sets.midcast.EnfeeblingMagicSkill
 
 
     sets.midcast.EnfeeblingMagicDispel = {

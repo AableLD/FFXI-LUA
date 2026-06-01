@@ -90,7 +90,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Rep. Plat. Medal",
+		neck="Sam. Nodowa +1",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -105,7 +105,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Mpaca's Hose", augments={'Path: A',}},
 		feet="Kas. Sune-Ate +3",
-		neck="Republican Platinum Medal",
+		neck="Sam. Nodowa +1",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -121,7 +121,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Republican Platinum Medal",
+		neck="Sam. Nodowa +1",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -137,7 +137,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Republican Platinum Medal",
+		neck="Sam. Nodowa +1",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -153,7 +153,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Republican Platinum Medal",
+		neck="Sam. Nodowa +1",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Thrud Earring",
@@ -187,7 +187,7 @@ sets.engaged.SubtleBlow = {
 		hands="Kasuga Kote +3",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Rep. Plat. Medal",
+		neck="Sam. Nodowa +1",
 		waist="Orpheus's Sash",
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		right_ear="Friomisi Earring",
@@ -219,6 +219,16 @@ sets.Meditate = {
     sets.precast.JA["Meditate"] = {
      head="Wakido Kabuto +2",
     hands="Sakonji Kote +1",
+    neck="Rep. Plat. Medal",
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
+}
+
+
+
+    sets.precast.JA["Blade Bash"] = {
+head="Valorous Mask",
+legs="Valorous Hose",   
+hands="Sakonji Kote +1",
     neck="Rep. Plat. Medal",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 }

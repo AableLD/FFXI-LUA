@@ -197,7 +197,7 @@ function get_sets()
     sub="Khonsu",
     ammo="Homiliary",
     head="Acad. Mortar. +4",
-    body="Pedagogy Gown +1",
+    body="Pedagogy Gown +2",
     hands="Nyame Gauntlets",
     legs="Arbatel Pants +2",
     feet="Nyame Sollerets",
@@ -303,7 +303,7 @@ function get_sets()
     sub="Khonsu",
     ammo="Sapience Orb",
     head="Pedagogy Mortarboard +1",
-    body="Acad. Gown +4",
+    body="Merlinic Jubbah",
     hands="Acad. Bracers +3",
     legs={ name="Lengo Pants", augments={'INT+3','"Mag.Atk.Bns."+5',}},
     feet="Regal Pumps +1",
@@ -360,7 +360,7 @@ function get_sets()
     sub="Khonsu",
     ammo="Sapience Orb",
     head="Befouled Crown",
-    body="Pedagogy Gown +1",
+    body="Pedagogy Gown +2",
     hands="Acad. Bracers +3",
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
     feet="Peda. Loafers",
@@ -379,7 +379,7 @@ function get_sets()
     sub="Khonsu",
     ammo="Sapience Orb",
     head="Befouled Crown",
-    body="Pedagogy Gown +1",
+    body="Pedagogy Gown +2",
     hands="Acad. Bracers +3",
     legs="Shedir Seraweels",
     feet="Peda. Loafers",
@@ -416,8 +416,8 @@ function get_sets()
     ---------------------
 
     sets.precast["Tabula Rasa"] = {legs="Pedagogy Pants +1"}
-    sets.precast["Enlightenment"] = {body="Pedagogy Gown +1"}	 
-    sets.precast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown +1"}	 
+    sets.precast["Enlightenment"] = {body="Pedagogy Gown +2"}	 
+    sets.precast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown +2"}	 
 
 	
 	----------
@@ -490,7 +490,7 @@ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic
 back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-8%',}},
     }
 
-	sets.midcast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown +1"}
+	sets.midcast["Sublimation"] = {head="Acad. Mortar. +4", body="Pedagogy Gown +2"}
     
     sets.midcast.nuking.normal = {main="Bunzi's Rod",
     sub="Ammurapi Shield",
