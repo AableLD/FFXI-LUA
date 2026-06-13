@@ -300,7 +300,7 @@ sets.midcast['Enhancing Magic'] = {
     main="Daybreak",
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum",
-    head="Befouled Crown",
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
     body="Ebers Bliaut +3",
     hands="Dynasty Mitts",
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},

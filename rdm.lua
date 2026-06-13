@@ -534,13 +534,31 @@ sets.midcast["aspir"] = sets.midcast.drain
     sets.midcast["Regen II"] = sets.midcast.Regen
 
 
+sets.midcast.EnhancingMagicSkill = {
+    ammo="Sapience Orb",
+    head="Befouled Crown",
+    body="Viti. Tabard +4",
+    hands="Viti. Gloves +4",
+    legs="Atro. Tights +4",
+    feet="Leth. Houseaux +3",
+    neck="Incanter's Torque",
+    waist="Embla Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+    left_ring="Kishar Ring",
+    right_ring="Freke Ring",
+    back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
+}
+
+sets.midcast["Temper II"] = sets.midcast.EnhancingMagicSkill
+
 
 
 sets.midcast.EnhancingMagic = {
         main={ name="Colada", augments={'Enh. Mag. eff. dur. +4','"Mag.Atk.Bns."+8','DMG:+2',}},
         sub="Ammurapi Shield",
         ammo="Sapience Orb",
-        head="Atro. Chapeau +4",
+        head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
         body="Vitiation tabard +4",
         hands="Viti. Gloves +4",
         legs="Telchine Braconi",
@@ -555,7 +573,6 @@ sets.midcast.EnhancingMagic = {
     }
 
 sets.midcast["Blink"] = sets.midcast.EnhancingMagic
-    sets.midcast["Temper II"] = sets.midcast.EnhancingMagic
 sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic
 sets.midcast["Ice Spikes"] = sets.midcast.EnhancingMagic
 sets.midcast["Shock Spikes"] = sets.midcast.EnhancingMagic
@@ -599,9 +616,6 @@ sets.midcast["Baraero"] = sets.midcast.EnhancingMagic
 sets.midcast["Barstone"] = sets.midcast.EnhancingMagic
 sets.midcast["Barthunder"] = sets.midcast.EnhancingMagic
 sets.midcast["Barwater"] = sets.midcast.EnhancingMagic
-sets.midcast["Ice Spikes"] = sets.midcast.EnhancingMagic
-sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic
-sets.midcast["Shock Spikes"] = sets.midcast.EnhancingMagic
 
 
 sets.midcast.Gain = {

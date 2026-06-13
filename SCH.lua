@@ -359,7 +359,7 @@ function get_sets()
     sets.precast.enhancing = set_combine(sets.precast.casting,{main={ name="Pedagogy Staff", augments={'Path: C',}},
     sub="Khonsu",
     ammo="Sapience Orb",
-    head="Befouled Crown",
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
     body="Pedagogy Gown +2",
     hands="Acad. Bracers +3",
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
