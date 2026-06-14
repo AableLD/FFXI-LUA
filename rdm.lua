@@ -30,7 +30,7 @@ function init_gear_sets()
     body="Lethargy Sayon +3",
     hands="Nyame Gauntlets",
     legs="Sworn Brais",
-    feet="Nyame Sollerets",
+    feet="Sworn Sabatons",
     neck="Warder's Charm +1",
     waist="Carrier's Sash",
     left_ear="Alabaster Earring",
@@ -41,20 +41,22 @@ function init_gear_sets()
 }
 
     sets.precast.FC = {
+    main="Sakpata's Sword",
+    sub="Ammurapi Shield",
     ammo="Sapience Orb",
-    head={ name="Atro. Chapeau +4", priority=74},
-    body={ name="Viti. Tabard +4", priority=84},
-    hands={ name="Nyame Gauntlets", priority=90},
-    legs={ name="Sworn Brais", priority=164},
-    feet={ name="Atrophy Boots +4", priority=94},
-    neck={ name="Sanctity Necklace", priority=35},
+    head="Atro. Chapeau +4",
+    body="Viti. Tabard +4",
+    hands="Nyame Gauntlets",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
+    neck="Null Loop",
     waist="Witful Belt",
-    left_ear={ name="Alabaster Earring", priority=100},
+    left_ear="Alabaster Earring",
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
     left_ring="Veneficium Ring",
     right_ring="Lebeche Ring",
     back="Perimede Cape",
-    }
+}
     
     sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {   main={ name="Vitiation Sword", augments={'Path: C',}, priority=120},
     sub="Archduke's Shield",
