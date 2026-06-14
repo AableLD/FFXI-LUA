@@ -45,7 +45,7 @@ function init_gear_sets()
     head="Ebers Cap +2",
     body="Inyanga Jubbah +2",
     hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
-    legs={ name="Lengo Pants", augments={'INT+3','"Mag.Atk.Bns."+5',}},
+    legs={ name="Sworn Brais", priority=164},
     feet="Regal Pumps +1",
     neck="Voltsurge Torque",
     waist="Witful Belt",
