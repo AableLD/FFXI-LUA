@@ -350,6 +350,9 @@ left_ear="Alabaster Earring",
     	right_ring="Defending Ring",
     	back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},}
 		
+	
+	sets.midcast['Raise'] = set_combine(sets.midcast.Enmity.SIRD, {})	
+
 	sets.midcast['Crusade'] = set_combine(sets.midcast.Enmity.SIRD, {})
 	
 	sets.midcast['Blue Magic'].Enmity = set_combine(sets.midcast.Enmity, {})

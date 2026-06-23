@@ -23,7 +23,7 @@ function init_gear_sets()
   sets.Obi = { waist='Hachirin-no-Obi' }
 
  sets.idle = {
-    main={ name="Colada", augments={'Pet: INT+2','Sklchn.dmg.+2%','"Refresh"+2','DMG:+5',}},
+    main="Daybreak",
     sub="Archduke's Shield",
     ammo="Homiliary",
     head="Viti. Chapeau +4",
@@ -41,8 +41,6 @@ function init_gear_sets()
 }
 
     sets.precast.FC = {
-    main="Sakpata's Sword",
-    sub="Ammurapi Shield",
     ammo="Sapience Orb",
     head="Atro. Chapeau +4",
     body="Viti. Tabard +4",
@@ -139,15 +137,17 @@ sets.midcast["Aquaveil"] = sets.midcast.Aquaveil
 
 
 sets.engaged = {
-ammo="Coiste Bodhar",
-    head="Malignance Chapeau",
+ammo="Sroda Tathlum",
+ main="Vitiation Sword",
+        sub="Ammurapi Shield",   
+head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
     neck="Null Loop",
     waist="Orpheus's Sash",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
     left_ring="Murky Ring",
     right_ring="Ilabrat Ring",
@@ -822,8 +822,6 @@ function check_weaponlock()
     if state.WeaponLock.value then
         disable("main")
         disable("sub")
-        disable("range")
-        disable("ammo")
     else
         enable("main")
         enable("sub")
