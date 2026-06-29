@@ -111,7 +111,13 @@ function init_gear_sets()
     right_ring="Niqmaddu Ring",
     back="Null Shawl",})
 
-    sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, {
+
+sets.precast.WS['Catastrophe'] = set_combine(sets.precast.WS, {
+        right_ear="Hoxne Earring",
+    })
+
+
+sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, {
         waist="Fotia Belt",
     })
 

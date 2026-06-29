@@ -464,12 +464,14 @@ function init_gear_sets()
     --]]
     sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
         neck="Rep. Plat. Medal",
+	ear1="Hoxne Earring",
         waist="Sailfi Belt +1",
         back=Camulus.WSD,
     })
 
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, { 
-        ring1 ="Epona's Ring",
+        ear1="Hoxne Earring",
+	ring1 ="Epona's Ring",
         ring2="Regal Ring",
         back=Camulus.DA,
         legs="Meghanada Chausses +2",
@@ -478,6 +480,7 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'] = set_combine(sets.precast.WS, {
         body=Chasseur_Body,
         waist="Fotia Belt",
+	ear1="Hoxne Earring",
     })
 
     sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {
@@ -496,7 +499,7 @@ function init_gear_sets()
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
-    right_ear="Moonshade Earring",
+    right_ear="Hoxne Earring",
     left_ring="Dingir Ring",
     right_ring="Cornelia's Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -510,7 +513,7 @@ function init_gear_sets()
     feet="Lanun Bottes +4",
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
     waist="Orpheus's Sash",
-    left_ear="Friomisi Earring",
+    left_ear="Hoxne Earring",
     right_ear="Moonshade Earring",
     left_ring="Dingir Ring",
     right_ring="Archon Ring",
@@ -526,7 +529,7 @@ ammo="Living Bullet",
     feet="Lanun Bottes +4",
     neck="Fotia Gorget",
     waist="Fotia Belt",
-    left_ear="Friomisi Earring",
+    left_ear="Hoxne Earring",
     right_ear="Moonshade Earring",
     left_ring="Dingir Ring",
     right_ring="Cornelia's Ring",

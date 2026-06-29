@@ -375,11 +375,18 @@ function init_gear_sets()
 		feet = "Nyame Sollerets"
 	}
 
+sets.precast.WS["Metatron Torment"] = set_combine(sets.precast.WS,{
+		ear1 =Thrud Earring",
+		ear2 ="Hoxne Earring",
+	})
+
 	sets.precast.WS["Savage Blade"] = set_combine(sets.precast.WS,{
 		legs = Boii_Legs,
+		ear2 ="Hoxne Earring",
 	})
 
 	sets.precast.WS["Judgment"] = set_combine(sets.precast.WS,{
+		ear2 ="Hoxne Earring",	
 	})
 
 	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS,{
@@ -395,6 +402,9 @@ function init_gear_sets()
 		Body= "Hjarrandi Breastplate",
 		waist="Sailfi Belt +1",
 	})
+
+
+
 
 	sets.precast.WS["Requiescat"] = set_combine(sets.precast.WS,{
 		ammo="Crepuscular Pebble",
