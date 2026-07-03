@@ -360,16 +360,36 @@ sets.midcast.EnfeeblingMagicINT = {
 }
 
     sets.midcast["Bind"] = sets.midcast.EnfeeblingMagicINT
-    sets.midcast["Sleep"] = sets.midcast.EnfeeblingMagicINT
-    sets.midcast["Sleep II"] = sets.midcast.EnfeeblingMagicINT
-    sets.midcast["Sleepga"] = sets.midcast.EnfeeblingMagicINT
-    sets.midcast["Sleepga II"] = sets.midcast.EnfeeblingMagicINT    
     sets.midcast["Poison II"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Poison"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Break"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Blind II"] = sets.midcast.EnfeeblingMagicINT
     sets.midcast["Blind"] = sets.midcast.EnfeeblingMagicINT
 
+
+sets.midcast.EnfeeblingMagicINTS = {
+    main="Contemplator +1",
+    sub="Enki Strap",
+    ammo="Regal Gem",
+    head="Viti. Chapeau +4",
+    body="Lethargy Sayon +3",
+    hands="Leth. Ganth. +3",
+    legs={ name="Chironic Hose", augments={'Accuracy+20','INT+10','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+    feet="Viti. Boots +4",
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
+    waist="Obstin. Sash",
+    left_ear="Regal Earring",
+    right_ear="Snotra Earring",
+    left_ring="Kishar Ring",
+    right_ring="Metamor. Ring +1",
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Spell interruption rate down-10%',}},
+}
+
+
+    sets.midcast["Sleep"] = sets.midcast.EnfeeblingMagicINTs
+    sets.midcast["Sleep II"] = sets.midcast.EnfeeblingMagicINTs
+    sets.midcast["Sleepga"] = sets.midcast.EnfeeblingMagicINTs
+    sets.midcast["Sleepga II"] = sets.midcast.EnfeeblingMagicINTs    
 
 
     sets.midcast.EnfeeblingMagic = {

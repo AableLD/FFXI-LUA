@@ -277,8 +277,8 @@ function get_sets()
     sets.buff['Immanence'] = {hands="Arbatel Bracers +2"}
     sets.buff['Penury'] = {legs="Arbatel Pants +2"}
     sets.buff['Parsimony'] = {legs="Arbatel Pants +2"}
-    sets.buff['Celerity'] = {feet="Peda. Loafers"}
-    sets.buff['Alacrity'] = {feet="Peda. Loafers"}
+    sets.buff['Celerity'] = {feet="Peda. Loafers +2"}
+    sets.buff['Alacrity'] = {feet="Peda. Loafers +2"}
     sets.buff['Klimaform'] = {feet="Arbatel Loafers +2"}	
     -- Ebulience set empy now as we get better damage out of a good Merlinic head
     sets.buff['Ebullience'] = {} -- I left it there still if it becomes needed so the SCH.lua file won't need modification should you want to use this set
@@ -363,7 +363,7 @@ function get_sets()
     body="Pedagogy Gown +2",
     hands="Acad. Bracers +3",
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
-    feet="Peda. Loafers",
+    feet="Peda. Loafers +2",
     neck="Incanter's Torque",
     waist="Embla Sash",
     left_ear="Loquac. Earring",
@@ -382,7 +382,7 @@ function get_sets()
     body="Pedagogy Gown +2",
     hands="Acad. Bracers +3",
     legs="Shedir Seraweels",
-    feet="Peda. Loafers",
+    feet="Peda. Loafers +2",
     neck="Nodens Gorget",
     waist="Siegel Sash",
     left_ear="Loquac. Earring",
@@ -629,7 +629,7 @@ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic
  	
  	sets.midcast.cure = {} -- Leave This Empty
     -- Cure Potency
-    sets.midcast.cure.normal = set_combine(sets.midcast.casting,{
+    sets.midcast.cure.normal = set_combine(sets.midcast.casting,{ hands="Peda. Bracers +2",
 
     })
     sets.midcast.cure.weather = set_combine(sets.midcast.cure.normal,{

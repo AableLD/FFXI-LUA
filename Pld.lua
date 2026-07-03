@@ -456,19 +456,21 @@ left_ear="Alabaster Earring",
     
 
     -- Idle sets
-	sets.idle = {ammo="Crepuscular Pebble",
-	    head="Null Masque",
-    	body="Sacro Breastplate",
-    	hands="Chev. Gauntlets +3",
-    	legs="Chev. Cuisses +3",
-    	feet="Sworn Sabatons",
-    	neck="Warder's Charm +1",
-    	waist="Plat. Mog. Belt",
-    	left_ear="Alabaster Earring",
-    	right_ear="Chevalier's Earring +1",
-    	left_ring="Shadow Ring",
-    	right_ring="Shneddick Ring",
-    	back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},}
+	sets.idle = {  
+    ammo="Eluder's Sachet",
+    head="Chev. Armet +3",
+    body="Sacro Breastplate",
+    hands="Chev. Gauntlets +3",
+    legs="Chev. Cuisses +3",
+    feet="Sworn Sabatons",
+    neck="Unmoving Collar +1",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Chev. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Damage taken-3%',}},
+    left_ring="Shadow Ring",
+    right_ring="Moonlight Ring",
+    back="Shadow Mantle",
+}
 
 	sets.idle.TANK = {ammo="Eluder's Sachet",
 	head="Chev. Armet +3",
