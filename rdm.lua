@@ -527,7 +527,7 @@ sets.midcast["aspir"] = sets.midcast.drain
     sets.midcast["Haste II"] = sets.midcast.EnhancingMagicOthers
     sets.midcast.Haste = sets.midcast.EnhancingMagicOthers
     sets.midcast["Phalanx II"] = sets.midcast.EnhancingMagicOthers
-    sets.midcast["Phalanx"] = sets.midcast.EnhancingMagic
+    sets.midcast["Phalanx"] = sets.midcast.EnhancingMagicP
 	sets.midcast["Flurry II"] = sets.midcast.EnhancingMagicOthers
     sets.midcast["Protect V"] = sets.midcast.EnhancingMagicOthers
     sets.midcast["Shell V"] = sets.midcast.EnhancingMagicOthers
@@ -593,6 +593,25 @@ sets.midcast.EnhancingMagic = {
         right_ring="Defending Ring",
         back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
     }
+
+sets.midcast.EnhancingMagicP = {
+        main="Sakpata's sword",
+        sub="Ammurapi Shield",
+        ammo="Sapience Orb",
+        head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
+        body="Vitiation tabard +4",
+        hands="Viti. Gloves +4",
+        legs="Telchine Braconi",
+        feet="Leth. Houseaux +3",
+        neck={name="Dls. Torque +2", augments={'Path: A',}},
+        waist="Embla Sash",
+        left_ear={ name="Alabaster Earring", priority=100},
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','"Dbl.Atk."+4',}},
+        left_ring="Murky Ring",
+        right_ring="Defending Ring",
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +10','Mag. Acc.+6','Enh. Mag. eff. dur. +19',}},
+    }
+
 
 sets.midcast["Blink"] = sets.midcast.EnhancingMagic
 sets.midcast["Blaze Spikes"] = sets.midcast.EnhancingMagic

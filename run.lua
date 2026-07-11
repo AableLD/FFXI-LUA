@@ -46,17 +46,17 @@ end
 	-- JA Sets for Precast Function --	
 	sets.JA = {}
 	
-	sets.JA['Elemental Sforzo'] = {body="Futhark Coat +2",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
-	sets.JA['Vallation'] = {body="Runeist's Coat +2",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +1",back="Ogma\'s Cape"}
+	sets.JA['Elemental Sforzo'] = {body="Futhark Coat +1",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
+	sets.JA['Vallation'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +1",back="Ogma\'s Cape"}
 	sets.JA['Valiance'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +1",back="Ogma\'s Cape"}
-	sets.JA['Pflug'] = {feet="Runeist Bottes +1",hands="Kurys gloves"}
-	sets.JA['Swordplay'] = {hands="Futhark Mitons +3",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
+	sets.JA['Pflug'] = {feet="Runeist Bottes",hands="Kurys gloves"}
+	sets.JA['Swordplay'] = {hands="Futhark Mitons +1",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
 	sets.JA['Gambit'] = {hands="Runeist's Mitons +2",feet="Erilaz greaves +2"}
 	sets.JA['Liement'] = {body="Futhark Coat +1",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
 	sets.JA['Battuta'] = {head="Fu. Bandeau +4",hands="Kurys gloves",legs="Erilaz leg guards +3"}
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
-	sets.JA['Vivacious Pulse'] = {head="Erilaz Galea +1",hands="Kurys gloves",legs="Runeist Trousers +1",ring2="Globidonta Ring",feet="Erilaz greaves +2"}
-	sets.JA['Rayke'] = {feet="Futhark Boots +1",hands="Kurys gloves"}
+	sets.JA['Vivacious Pulse'] = {head="Erilaz Galea +1",hands="Kurys gloves",legs="Runeist Trousers",ring2="Globidonta Ring",feet="Erilaz greaves +2"}
+	sets.JA['Rayke'] = {feet="Futhark Boots +3",hands="Kurys gloves"}
 	
 	sets.JA['Lunge'] = {ammo="Pemphredo Tathlum",
     head="Herculean Helm",
@@ -93,7 +93,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},}
+    back="Null Shawl",}
     
 	sets.TP.MAcc = set_combine(sets.TP.Reg,{hands="Meghanada Gloves +2",legs="Meghanada Chausses +2",back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}})
 	
@@ -110,7 +110,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
+    back="Null Shawl",
 }
 	
 	sets.TP.PDT = {
@@ -126,7 +126,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
+    back="Null Shawl",
 }	
 	sets.TP.PDTA ={
      ammo="Yamarang",
@@ -141,7 +141,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
+    back="Null Shawl",
 }
 	
 	
@@ -192,7 +192,7 @@ ammo="Yamarang",
     		right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
     		left_ring="Shneddick Ring",
     		right_ring="Shadow Ring",
-		    back="Mecistopins Mantle",
+		    back="Null Shawl",
 		}
 	
 	sets.Idle.CP = set_combine(sets.Idle.PDT,{back="Mecistopins Mantle"})
@@ -218,7 +218,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Regal Ring",
     right_ring="Niqmaddu Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
+    back="Null Shawl",
 }
 	
 	sets.Resolution.Accuracy = {ammo="Coiste Bodhar",
@@ -233,7 +233,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Regal Ring",
     right_ring="Niqmaddu Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
+    back="Null Shawl",
 }
 	
 	sets.Resolution.R = set_combine(sets.Resolution.Normal,{neck="Ygnas's Resolve +1"})
@@ -254,7 +254,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Regal Ring",
     right_ring="Niqmaddu Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
+    back="Null Shawl",
 }
 	
 	sets.Dimidiation.Accuracy = {ammo="Knobkierrie",
@@ -269,7 +269,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Regal Ring",
     right_ring="Niqmaddu Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
+    back="Null Shawl",
 }
 	
 	sets.Dimidiation.R = set_combine(sets.Dimidiation.Normal,{neck="Ygnas's Resolve +1"})
@@ -351,16 +351,15 @@ ammo="Yamarang",
     head="Rune. Bandeau +2",
     body="Erilaz Surcoat +2",
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
     neck="Voltsurge Torque",
     waist="Cornelia's Belt",
     left_ear="Loquac. Earring",
     right_ear="Etiolation Earring",
     left_ring="Kishar Ring",
     right_ring="Lebeche Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
-}
+    back={ name="Ogma's Cape", augments={'HP+60','HP+10','"Fast Cast"+10',}},}
 
 	sets.precast.FC.Enhancing = set_combine(sets.precast.FC,{hands="Runeist Mitons +2",neck="Incanter's Torque",waist="Siegel Sash",legs="Futhark Trousers +1"})
 				
@@ -372,7 +371,7 @@ ammo="Yamarang",
 	sets.Utility = {}
 	
 	sets.Utility.Phalanx = set_combine(sets.precast.FC.Enhancing,{
-	head="Futhark Bandeau +4",})
+	head="Futhark Bandeau +4",back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
 	
 	sets.Utility.Temper = set_combine(sets.precast.FC.Enhancing,{legs="Runeist Trousers +1"})
 
@@ -388,8 +387,8 @@ ammo="Yamarang",
     right_ear="Etiolation Earring",
     left_ring="Kishar Ring",
     right_ring="Lebeche Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
-}
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
+
 	sets.Utility.Blue = {
 	ammo="Sapience Orb",
     head="Rune. Bandeau +2",
@@ -403,14 +402,13 @@ ammo="Yamarang",
     right_ear="Etiolation Earring",
     left_ring="Kishar Ring",
     right_ring="Lebeche Ring",
-    back={ name="Mecisto. Mantle", augments={'Cap. Point+50%','Mag. Acc.+4','DEF+2',}},
-}
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
 
 	sets.Utility.WC = {head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
     body={ name="Futhark Coat +1", augments={'Enhances "Elemental Sforzo" effect',}},
     hands={ name="Futhark Mitons +1", augments={'Enhances "Sleight of Sword" effect',}},
     legs={ name="Futhark Trousers +1", augments={'Enhances "Inspire" effect',}},
-    feet={ name="Futhark Boots +1", augments={'Enhances "Rayke" effect',}},
+    feet={ name="Futhark Boots +3", augments={'Enhances "Rayke" effect',}},
     neck="Tjukurrpa Medal",
     waist="Luminary Sash",
     left_ear="Lifestorm Earring",
@@ -578,7 +576,7 @@ function midcast(spell,act)
 	end
 	
 	if spell.english == 'Flash' then
-		equip(sets.precast.FC.Divine)
+		equip(sets.precast.FC.Divine,{legs="Eri. Leg Guards +3", feet="Erilaz Greaves +2", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
 	end
 
 	if spell.english == 'Regen IV' then
@@ -599,7 +597,7 @@ function midcast(spell,act)
 	
 	if spell.type == 'JobAbility' then
 		if sets.JA[spell.english] then
-			equip(sets.JA[spell.english])
+			equip(sets.JA[spell.english], {legs="Eri. Leg Guards +3", feet="Erilaz Greaves +2", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
 		end
 	end
 	
@@ -683,7 +681,7 @@ function aftercast(spell,act)
 	end
 	
 	if player.status == 'Engaged' and buffactive['Battuta'] then
-		equip{feet="Futhark Boots +1",hands="Turms Mittens +1"}
+		equip{feet="Futhark Boots +3",hands="Turms Mittens +1"}
 	end	
 
 	if player.status == 'Engaged' and buffactive['Reive Mark'] then
@@ -693,7 +691,7 @@ end
 
 function buff_change(new,old)
 	if buffactive['Battuta'] then
-		equip{feet="Futhark Boots +1",hands="Turms Mittens +1"}
+		equip{feet="Futhark Boots +3",hands="Turms Mittens +1"}
 	end
 
 	if buffactive['Embolden'] then

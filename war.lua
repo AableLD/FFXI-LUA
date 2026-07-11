@@ -372,11 +372,11 @@ function init_gear_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Nyame Flanchard",
-		feet = "Nyame Sollerets"
+		feet = "Nyame Sollerets",
 	}
 
 sets.precast.WS["Metatron Torment"] = set_combine(sets.precast.WS,{
-		ear1 =Thrud Earring",
+		ear1 ="Thrud Earring",
 		ear2 ="Hoxne Earring",
 	})
 
