@@ -47,15 +47,15 @@ end
 	sets.JA = {}
 	
 	sets.JA['Elemental Sforzo'] = {body="Futhark Coat +1",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
-	sets.JA['Vallation'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +1",back="Ogma\'s Cape"}
-	sets.JA['Valiance'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +1",back="Ogma\'s Cape"}
+	sets.JA['Vallation'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +2",back="Ogma's Cape"}
+	sets.JA['Valiance'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +1",back="Ogma's Cape"}
 	sets.JA['Pflug'] = {feet="Runeist Bottes",hands="Kurys gloves"}
 	sets.JA['Swordplay'] = {hands="Futhark Mitons +1",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
 	sets.JA['Gambit'] = {hands="Runeist's Mitons +2",feet="Erilaz greaves +2"}
 	sets.JA['Liement'] = {body="Futhark Coat +1",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
 	sets.JA['Battuta'] = {head="Fu. Bandeau +4",hands="Kurys gloves",legs="Erilaz leg guards +3"}
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
-	sets.JA['Vivacious Pulse'] = {head="Erilaz Galea +1",hands="Kurys gloves",legs="Runeist Trousers",ring2="Globidonta Ring",feet="Erilaz greaves +2"}
+	sets.JA['Vivacious Pulse'] = {head="Erilaz Galea +2",hands="Kurys gloves",legs="Runeist Trousers",ring2="Globidonta Ring",feet="Erilaz greaves +2"}
 	sets.JA['Rayke'] = {feet="Futhark Boots +3",hands="Kurys gloves"}
 	
 	sets.JA['Lunge'] = {ammo="Pemphredo Tathlum",
@@ -84,7 +84,7 @@ end
 ammo="Yamarang",
     head="Fu. Bandeau +4",
     body="Runeist Coat",
-    hands="Erilaz Gauntlets +1",
+    hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
@@ -101,7 +101,7 @@ ammo="Yamarang",
     ammo="Yamarang",
     head="Fu. Bandeau +4",
     body="Runeist Coat",
-    hands="Erilaz Gauntlets +1",
+    hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
@@ -117,7 +117,7 @@ ammo="Yamarang",
     ammo="Yamarang",
     head="Fu. Bandeau +4",
     body="Runeist Coat",
-    hands="Erilaz Gauntlets +1",
+    hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
@@ -132,7 +132,7 @@ ammo="Yamarang",
      ammo="Yamarang",
     head="Fu. Bandeau +4",
     body="Runeist Coat",
-    hands="Erilaz Gauntlets +1",
+    hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
@@ -158,7 +158,7 @@ ammo="Yamarang",
 	
 	sets.TP.Multi = set_combine(sets.TP.Reg,{body="Thaumas Coat"})
 	
-	sets.TP.Mag = set_combine(sets.TP.PDT,{body="Runeist's Coat +2",back="Engulfer Cape +1",hands="Erilaz Gauntlets +1"})
+	sets.TP.Mag = set_combine(sets.TP.PDT,{body="Runeist's Coat +4",back="Engulfer Cape +1",hands="Erilaz Gauntlets +2"})
 	
 
 	 
@@ -361,17 +361,30 @@ ammo="Yamarang",
     right_ring="Lebeche Ring",
     back={ name="Ogma's Cape", augments={'HP+60','HP+10','"Fast Cast"+10',}},}
 
-	sets.precast.FC.Enhancing = set_combine(sets.precast.FC,{hands="Runeist Mitons +2",neck="Incanter's Torque",waist="Siegel Sash",legs="Futhark Trousers +1"})
+	sets.precast.FC.Enhancing = set_combine(sets.precast.FC,{hands="Runeist Mitons +2",neck="Incanter's Torque",waist="Siegel Sash",legs="Futhark Trousers +2"})
 				
-	sets.precast.FC.Divine = set_combine(sets.precast.FC,{legs="Runeist Trousers +1"})
+	sets.precast.FC.Divine = set_combine(sets.precast.FC,{legs="Runeist Trousers +2"})
 	
-	sets.precast.FC.Refresh = set_combine(sets.precast.FC.Enhancing,{head="Erilaz Galea +1"})
+	sets.precast.FC.Refresh = set_combine(sets.precast.FC.Enhancing,{head="Erilaz Galea +2"})
 	
 	--Phalanx Utility--
 	sets.Utility = {}
 	
 	sets.Utility.Phalanx = set_combine(sets.precast.FC.Enhancing,{
-	head="Futhark Bandeau +4",back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
+	
+ammo="Staunch Tathlum",
+    head="Fu. Bandeau +4",
+    body={ name="Taeon Tabard", augments={'Spell interruption rate down -8%','Phalanx +2',}},
+    hands={ name="Taeon Gloves", augments={'Spell interruption rate down -8%','Phalanx +3',}},
+    legs={ name="Taeon Tights", augments={'Spell interruption rate down -10%','Phalanx +2',}},
+    feet={ name="Taeon Boots", augments={'"Fast Cast"+3','Phalanx +3',}},
+    neck="Moonbeam Necklace",
+    waist="Plat. Mog. Belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
+    left_ring="Moonlight Ring",
+    right_ring="Murky Ring",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
 	
 	sets.Utility.Temper = set_combine(sets.precast.FC.Enhancing,{legs="Runeist Trousers +1"})
 
@@ -407,7 +420,7 @@ ammo="Yamarang",
 	sets.Utility.WC = {head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
     body={ name="Futhark Coat +1", augments={'Enhances "Elemental Sforzo" effect',}},
     hands={ name="Futhark Mitons +1", augments={'Enhances "Sleight of Sword" effect',}},
-    legs={ name="Futhark Trousers +1", augments={'Enhances "Inspire" effect',}},
+    legs={ name="Futhark Trousers +2", augments={'Enhances "Inspire" effect',}},
     feet={ name="Futhark Boots +3", augments={'Enhances "Rayke" effect',}},
     neck="Tjukurrpa Medal",
     waist="Luminary Sash",
