@@ -306,7 +306,7 @@ function init_gear_sets()
 
     sets.midcast.FastRecast = {}
         
-	sets.midcast.FastRecast.SIRD = set_combine(sets.midcast.FastRecast, {ammo="Staunch Tathlum",
+	sets.midcast.FastRecast.SIRD = set_combine(sets.midcast.FastRecast, {ammo="Staunch Tathlum +1",
     	head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     	body="Chev. Cuirass +3",
     	hands="Chev. Gauntlets +3",
@@ -322,7 +322,7 @@ left_ear="Alabaster Earring",
 		
    
 
-	sets.midcast.Enmity.SIRD = set_combine(sets.midcast.Enmity, {ammo="Staunch Tathlum",
+	sets.midcast.Enmity.SIRD = set_combine(sets.midcast.Enmity, {ammo="Staunch Tathlum +1",
     	head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     	body="Chev. Cuirass +3",
     	hands="Chev. Gauntlets +3",
@@ -336,7 +336,7 @@ left_ear="Alabaster Earring",
     	right_ring="Defending Ring",
     	back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},})
 
-	sets.midcast['Blue Magic'] = {ammo="Staunch Tathlum",
+	sets.midcast['Blue Magic'] = {ammo="Staunch Tathlum +1",
 	head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     	body="Chev. Cuirass +3",
     	hands="Chev. Gauntlets +3",
@@ -359,7 +359,7 @@ left_ear="Alabaster Earring",
 	
 	sets.midcast['Blue Magic'].Enmity.SIRD = set_combine(sets.midcast.Enmity.SIRD, {})
 
-    sets.midcast['Flash'] = {ammo="Staunch Tathlum",
+    sets.midcast['Flash'] = {ammo="Staunch Tathlum +1",
     	head="Chev. Armet +3",
     	body="Chev. Cuirass +3",
     	hands="Chev. Gauntlets +3",
@@ -379,7 +379,7 @@ left_ear="Alabaster Earring",
 	
 	sets.midcast['Foil'] = set_combine(sets.midcast['Flash'], {})
     
-    sets.midcast.Cure = {ammo="Staunch Tathlum",
+    sets.midcast.Cure = {ammo="Staunch Tathlum +1",
 	head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     	body="Chev. Cuirass +3",
     	hands="Chev. Gauntlets +3",
@@ -393,7 +393,7 @@ left_ear="Alabaster Earring",
     	right_ring="Defending Ring",
     	back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},} --10
 		
-	sets.midcast.Cure.SIRD = set_combine(sets.midcast.Cure, {ammo="Staunch Tathlum",
+	sets.midcast.Cure.SIRD = set_combine(sets.midcast.Cure, {ammo="Staunch Tathlum +1",
 	head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     	body="Chev. Cuirass +3",
     	hands="Chev. Gauntlets +3",
@@ -425,7 +425,7 @@ left_ear="Alabaster Earring",
 		waist="Asklepian Belt",
 		left_ear="Friomisi Earring",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},}
-		sets.midcast['Phalanx'] = {ammo="Staunch Tathlum",
+		sets.midcast['Phalanx'] = {ammo="Staunch Tathlum +1",
    	 head={ name="Odyssean Helm", augments={'Attack+9','Weapon Skill Acc.+11','Phalanx +4','Accuracy+2 Attack+2',}},
 	 body={ name="Odyss. Chestplate", augments={'Pet: "Store TP"+6','VIT+5','Phalanx +4',}},
     	 hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -520,7 +520,7 @@ left_ear="Alabaster Earring",
     -- Engaged sets
     --------------------------------------
     
-    sets.engaged = {ammo="Staunch Tathlum",
+    sets.engaged = {ammo="Staunch Tathlum +1",
 	    ammo="Eluder's Sachet",
     head="Chev. Armet +3",
     body="Chev. Cuirass +3",
@@ -536,7 +536,7 @@ left_ear="Alabaster Earring",
     back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},
 }
 		
-	sets.engaged.BURTAM3 = {ammo="Staunch Tathlum",
+	sets.engaged.BURTAM3 = {ammo="Staunch Tathlum +1",
 	    ammo="Eluder's Sachet",
     head="Sakpata's Helm",
     body="Sakpata's Plate",
@@ -552,7 +552,7 @@ left_ear="Alabaster Earring",
     back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Spell interruption rate down-10%',}},
 }
 
-    sets.engaged.GS = {ammo="Staunch Tathlum",
+    sets.engaged.GS = {ammo="Staunch Tathlum +1",
 	    head="Sakpata's Helm",
 	    body="Sakpata's Plate",
 	    hands="Sakpata's Gauntlets",

@@ -56,7 +56,7 @@ function init_gear_sets()
     back="Perimede Cape",
 }
     
-    sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {   main={ name="Vitiation Sword", augments={'Path: C',}, priority=120},
+    sets.precast.FC["Impact"] = set_combine(sets.precast.FC, {   main={ name="Crocea Mors", augments={'Path: C',}, priority=120},
     sub="Archduke's Shield",
     ammo="Sapience Orb",
     body="Crepuscular Cloak",
@@ -74,7 +74,7 @@ function init_gear_sets()
 sets.midcast.Utsusemi = {
         main="Mafic Cudgel",
     sub="Sacro Bulwark",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head="Atro. Chapeau +4",
     body="Viti. Tabard +4",
     hands="Leth. Ganth. +3",
@@ -138,11 +138,11 @@ sets.midcast["Aquaveil"] = sets.midcast.Aquaveil
 
 sets.engaged = {
 ammo="Sroda Tathlum",
- main="Vitiation Sword",
+ main="Crocea Mors",
         sub="Ammurapi Shield",   
 head="Malignance Chapeau",
     body="Malignance Tabard",
-    hands="Malignance Gloves",
+    hands="Aya. Manopolas +2",
     legs="Sworn Brais",
     feet="Sworn Sabatons",
     neck="Null Loop",
@@ -708,17 +708,17 @@ sets.midcast.Refresh = sets.midcast.Refresh
 
 
     sets.midcast.Cure = {
-        main="Daybreak",
+    main="Daybreak",
     sub="Sacro Bulwark",
-    ammo="Staunch Tathlum",
-    {head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},  priority=36},
-    {body="Bunzi's Robe",  priority=72},
-    {hands="Leth. Ganth. +3",  priority=155},
-    {legs="Atro. Tights +4",  priority=84},
-    {feet="Sworn Sabatons", priority=119},
-    {neck="Nodens Gorget",  priority=25},
-    {waist="Plat. Mog. Belt", priority=200},
-    {left_ear="Alabaster Earring", priority=100},
+    ammo="Staunch Tathlum +1",
+    head={ name="Kaykaus Mitra +1", augments={'MP+80','Spell interruption rate down +12%','"Cure" spellcasting time -7%',}},
+    body="Lethargy Sayon +3",
+    hands="Nyame Gauntlets",
+    legs="Sworn Brais",
+    feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
+    neck="Warder's Charm +1",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
     right_ear="Mendi. Earring",
     left_ring="Murky Ring",
     right_ring="Naji's Loop",

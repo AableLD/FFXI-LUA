@@ -589,7 +589,7 @@ back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic
 
     sets.midcast.MndEnfeebling = {main="Mpaca's Staff",
     sub="Khonsu",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head="Acad. Mortar. +4",
     body="Acad. Gown +4",
     hands="Acad. Bracers +3",

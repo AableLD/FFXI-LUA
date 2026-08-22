@@ -46,17 +46,17 @@ end
 	-- JA Sets for Precast Function --	
 	sets.JA = {}
 	
-	sets.JA['Elemental Sforzo'] = {body="Futhark Coat +1",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
-	sets.JA['Vallation'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +2",back="Ogma's Cape"}
-	sets.JA['Valiance'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +2",feet="Erilaz greaves +1",back="Ogma's Cape"}
+	sets.JA['Elemental Sforzo'] = {body="Futhark Coat +3",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
+	sets.JA['Vallation'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +3",feet="Erilaz greaves +2",back="Ogma's Cape"}
+	sets.JA['Valiance'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +3",feet="Erilaz greaves +2",back="Ogma's Cape"}
 	sets.JA['Pflug'] = {feet="Runeist Bottes",hands="Kurys gloves"}
 	sets.JA['Swordplay'] = {hands="Futhark Mitons +1",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
 	sets.JA['Gambit'] = {hands="Runeist's Mitons +2",feet="Erilaz greaves +2"}
-	sets.JA['Liement'] = {body="Futhark Coat +1",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
+	sets.JA['Liement'] = {body="Futhark Coat +3",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
 	sets.JA['Battuta'] = {head="Fu. Bandeau +4",hands="Kurys gloves",legs="Erilaz leg guards +3"}
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
 	sets.JA['Vivacious Pulse'] = {head="Erilaz Galea +2",hands="Kurys gloves",legs="Runeist Trousers",ring2="Globidonta Ring",feet="Erilaz greaves +2"}
-	sets.JA['Rayke'] = {feet="Futhark Boots +3",hands="Kurys gloves"}
+	sets.JA['Rayke'] = {feet="Futhark Boots +4",hands="Kurys gloves"}
 	
 	sets.JA['Lunge'] = {ammo="Pemphredo Tathlum",
     head="Herculean Helm",
@@ -83,13 +83,13 @@ end
     sub="Utu Grip",
 ammo="Yamarang",
     head="Fu. Bandeau +4",
-    body="Runeist Coat",
+    body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
     waist="Sailfi Belt +1",
-    left_ear="Cessance Earring",
+    left_ear="Alabaster Earring",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
@@ -100,13 +100,13 @@ ammo="Yamarang",
 	sets.TP.HAcc = {
     ammo="Yamarang",
     head="Fu. Bandeau +4",
-    body="Runeist Coat",
+    body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
     waist="Sailfi Belt +1",
-    left_ear="Cessance Earring",
+    left_ear="Alabaster Earring",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
@@ -116,13 +116,13 @@ ammo="Yamarang",
 	sets.TP.PDT = {
     ammo="Yamarang",
     head="Fu. Bandeau +4",
-    body="Runeist Coat",
+    body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
     waist="Sailfi Belt +1",
-    left_ear="Cessance Earring",
+    left_ear="Alabaster Earring",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
@@ -131,13 +131,13 @@ ammo="Yamarang",
 	sets.TP.PDTA ={
      ammo="Yamarang",
     head="Fu. Bandeau +4",
-    body="Runeist Coat",
+    body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
     feet="Erilaz Greaves +2",
     neck="Null Loop",
     waist="Sailfi Belt +1",
-    left_ear="Cessance Earring",
+    left_ear="Alabaster Earring",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
@@ -180,19 +180,19 @@ ammo="Yamarang",
 	sets.Idle.Refresh = sets.Idle.PDT
 	
 	sets.Idle.PDT = {
-		ammo="Staunch Tathlum",
-    		head="Null Masque",
-    		body="Runeist Coat +4",
-    		hands="Nyame Gauntlets",
-    		legs="Eri. Leg Guards +3",
-    		feet="Erilaz Greaves +2",
-    		neck="Rep. Plat. Medal",
-    		waist="Carrier's Sash",
-    		left_ear="Alabaster Earring",
-    		right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
-    		left_ring="Shneddick Ring",
-    		right_ring="Shadow Ring",
-		    back="Null Shawl",
+   ammo="Homiliary",
+    head="Null Masque",
+    body="Runeist Coat +4",
+    hands="Erilaz Gauntlets +2",
+    legs="Eri. Leg Guards +3",
+    feet="Erilaz Greaves +2",
+    neck="Rep. Plat. Medal",
+    waist="Engraved Belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
+    left_ring="Shneddick Ring",
+    right_ring="Shadow Ring",
+    back="Null Shawl",
 		}
 	
 	sets.Idle.CP = set_combine(sets.Idle.PDT,{back="Mecistopins Mantle"})
@@ -206,7 +206,7 @@ ammo="Yamarang",
 	sets.Resolution.index = {'Normal','Accuracy'}
 	Resolution_index = 1
 	
-	sets.Resolution.Normal = {ammo="Coiste Bodhar",
+	sets.Resolution.Normal = {ammo="Knobkierrie",
  		   head="Nyame Helm",
     		body="Nyame Mail",
     hands="Nyame Gauntlets",
@@ -215,13 +215,13 @@ ammo="Yamarang",
     neck="Fotia Gorget",
     waist="Sailfi Belt +1",
     left_ear="Moonshade Earring",
-    right_ear="Sherida Earring",
-    left_ring="Regal Ring",
+    right_ear="Hoxne Earring",
+    left_ring="Cornelia's Ring",
     right_ring="Niqmaddu Ring",
     back="Null Shawl",
 }
 	
-	sets.Resolution.Accuracy = {ammo="Coiste Bodhar",
+	sets.Resolution.Accuracy = {ammo="Knobkierrie",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
@@ -230,8 +230,8 @@ ammo="Yamarang",
     neck="Fotia Gorget",
     waist="Sailfi Belt +1",
     left_ear="Moonshade Earring",
-    right_ear="Sherida Earring",
-    left_ring="Regal Ring",
+    right_ear="Hoxne Earring",
+    left_ring="Cornelia's Ring",
     right_ring="Niqmaddu Ring",
     back="Null Shawl",
 }
@@ -251,7 +251,7 @@ ammo="Yamarang",
     neck="Rep. Plat. Medal",
     waist="Sailfi Belt +1",
     left_ear="Moonshade Earring",
-    right_ear="Sherida Earring",
+    right_ear="Hoxne Earring",
     left_ring="Regal Ring",
     right_ring="Niqmaddu Ring",
     back="Null Shawl",
@@ -266,7 +266,7 @@ ammo="Yamarang",
     neck="Rep. Plat. Medal",
     waist="Sailfi Belt +1",
     left_ear="Moonshade Earring",
-    right_ear="Sherida Earring",
+    right_ear="Hoxne Earring",
     left_ring="Regal Ring",
     right_ring="Niqmaddu Ring",
     back="Null Shawl",
@@ -274,6 +274,80 @@ ammo="Yamarang",
 	
 	sets.Dimidiation.R = set_combine(sets.Dimidiation.Normal,{neck="Ygnas's Resolve +1"})
 	
+
+
+
+-- WS Savage Blade Set --  
+			
+	sets.WS['Savage Blade'] = {}
+	sets.WS['Savage Blade'].index = {'Normal','Accuracy'}
+	['Savage Blade']_index = 1
+
+	sets.WS['Savage Blade'].Normal = {ammo="Knobkierrie",
+		    head="Nyame Helm",
+	    body="Nyame Mail",
+    	hands="Nyame Gauntlets",
+    	legs="Nyame Flanchard",
+    	feet="Nyame Sollerets",
+    	neck="Rep. Plat. Medal",
+    	waist="Sailfi Belt +1",
+    	left_ear="Moonshade Earring",
+    	right_ear="Hoxne Earring",
+    	left_ring="Cornelia's Ring",
+    	right_ring="Niqmaddu Ring",
+    	back="Null Shawl",}
+
+	
+	sets.WS['Savage Blade'].Accuracy = {ammo="Knobkierrie",
+		    head="Nyame Helm",
+	    body="Nyame Mail",
+    	hands="Nyame Gauntlets",
+    	legs="Nyame Flanchard",
+    	feet="Nyame Sollerets",
+    	neck="Rep. Plat. Medal",
+    	waist="Sailfi Belt +1",
+    	left_ear="Moonshade Earring",
+    	right_ear="Hoxne Earring",
+    	left_ring="Cornelia's Ring",
+    	right_ring="Niqmaddu Ring",
+    	back="Null Shawl",}
+
+
+-- WS Sanguine Blade Set --  
+			
+	sets.WS['Sanguine Blade'] = {}
+	sets.WS['Sanguine Blade'].index = {'Normal','Accuracy'}
+	['Sanguine Blade']_index = 1
+
+	sets.WS['Sanguine Blade'].Normal = {ammo="Knobkierrie",
+			head="Pixie Hairpin +1",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard", 
+		feet="Nyame Sollerets",
+		neck="Sibyl Scarf",
+		waist="Orpheus's Sash",
+		left_ear="Friomisi Earring",
+		right_ear="Thrud Earring",
+		left_ring="Cornelia's Ring",
+		right_ring="Archon Ring",
+		back="Null Shawl",}
+	
+
+	sets.WS['Sanguine Blade'].Accuracy = {ammo="Knobkierrie",
+			head="Pixie Hairpin +1",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard", 
+		feet="Nyame Sollerets",
+		neck="Sibyl Scarf",
+		waist="Orpheus's Sash",
+		left_ear="Friomisi Earring",
+		right_ear="Thrud Earring",
+		left_ring="Cornelia's Ring",
+		right_ring="Archon Ring",
+		back="Null Shawl",}
+
 	
 	-- WS Requiescat Set --  
 			
@@ -361,7 +435,7 @@ ammo="Yamarang",
     right_ring="Lebeche Ring",
     back={ name="Ogma's Cape", augments={'HP+60','HP+10','"Fast Cast"+10',}},}
 
-	sets.precast.FC.Enhancing = set_combine(sets.precast.FC,{hands="Runeist Mitons +2",neck="Incanter's Torque",waist="Siegel Sash",legs="Futhark Trousers +2"})
+	sets.precast.FC.Enhancing = set_combine(sets.precast.FC,{hands="Runeist Mitons +2",neck="Incanter's Torque",waist="Siegel Sash",legs="Futhark Trousers +3"})
 				
 	sets.precast.FC.Divine = set_combine(sets.precast.FC,{legs="Runeist Trousers +2"})
 	
@@ -372,7 +446,7 @@ ammo="Yamarang",
 	
 	sets.Utility.Phalanx = set_combine(sets.precast.FC.Enhancing,{
 	
-ammo="Staunch Tathlum",
+ammo="Staunch Tathlum +1",
     head="Fu. Bandeau +4",
     body={ name="Taeon Tabard", augments={'Spell interruption rate down -8%','Phalanx +2',}},
     hands={ name="Taeon Gloves", augments={'Spell interruption rate down -8%','Phalanx +3',}},
@@ -420,8 +494,8 @@ ammo="Staunch Tathlum",
 	sets.Utility.WC = {head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
     body={ name="Futhark Coat +1", augments={'Enhances "Elemental Sforzo" effect',}},
     hands={ name="Futhark Mitons +1", augments={'Enhances "Sleight of Sword" effect',}},
-    legs={ name="Futhark Trousers +2", augments={'Enhances "Inspire" effect',}},
-    feet={ name="Futhark Boots +3", augments={'Enhances "Rayke" effect',}},
+    legs={ name="Futhark Trousers +3", augments={'Enhances "Inspire" effect',}},
+    feet={ name="Futhark Boots +4", augments={'Enhances "Rayke" effect',}},
     neck="Tjukurrpa Medal",
     waist="Luminary Sash",
     left_ear="Lifestorm Earring",
@@ -694,7 +768,7 @@ function aftercast(spell,act)
 	end
 	
 	if player.status == 'Engaged' and buffactive['Battuta'] then
-		equip{feet="Futhark Boots +3",hands="Turms Mittens +1"}
+		equip{feet="Futhark Boots +4",hands="Turms Mittens +1"}
 	end	
 
 	if player.status == 'Engaged' and buffactive['Reive Mark'] then
@@ -704,7 +778,7 @@ end
 
 function buff_change(new,old)
 	if buffactive['Battuta'] then
-		equip{feet="Futhark Boots +3",hands="Turms Mittens +1"}
+		equip{feet="Futhark Boots +4",hands="Turms Mittens +1",back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
 	end
 
 	if buffactive['Embolden'] then
@@ -728,7 +802,7 @@ function status_change(new,old)
 	end
 
 	if buffactive['Battuta'] and new == 'Engaged' then
-		equip{feet="Futhark Boots +3",hands="Turms Mittens +1"}
+		equip{feet="Futhark Boots +4",hands="Turms Mittens +1", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
 	end
 	
 	--if (buffactive['aftermath: lv.3'] and os.clock() - AM_start >= 160) then
