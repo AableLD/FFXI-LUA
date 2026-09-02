@@ -39,7 +39,7 @@ function init_gear_sets()
 }
 
     sets.precast.FC = {
-    main="Gada",
+    main="Cath Palug hammer",
     sub="Chanter's Shield",
     ammo="Sapience Orb",
     head="Ebers Cap +2",
@@ -58,7 +58,7 @@ function init_gear_sets()
     
    
     sets.midcast.Stoneskin = {
-    main="Mafic Cudgel",
+     main={ name="Gada", augments={'Enh. Mag. eff. dur. +6','VIT+2',}},
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum +1",
     head="Befouled Crown",
@@ -78,8 +78,7 @@ function init_gear_sets()
 sets.midcast["Stoneskin"] = sets.midcast.Stoneskin
 
 sets.midcast.Aquaveil = {
-    main="Mafic Cudgel",
-    sub="Ammurapi Shield",
+ main={ name="Gada", augments={'Enh. Mag. eff. dur. +6','VIT+2',}},    sub="Ammurapi Shield",
     ammo="Staunch Tathlum +1",
     head="Chironic Hat",
     body="Bunzi's Robe",
@@ -278,7 +277,7 @@ sets.midcast.BarElement= {
 }
 
 sets.midcast.BarStatus= {
-    main="Daybreak",
+  main={ name="Gada", augments={'Enh. Mag. eff. dur. +6','VIT+2',}},
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum +1",
     head="Ebers Cap +2",
@@ -297,7 +296,7 @@ sets.midcast.BarStatus= {
 
 
 sets.midcast['Enhancing Magic'] = {
-    main="Daybreak",
+     main={ name="Gada", augments={'Enh. Mag. eff. dur. +6','VIT+2',}},
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum +1",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
@@ -385,6 +384,7 @@ sets.midcast.Curaga = {
 
     sets.midcast["Cursna"] = sets.midcast.Cursna
 
+sets.precast.JA["Benediction"] = {body = "Piety Bliaut +1",}
 
 sets.midcast["Impact"] = sets.midcast.Impact
 
