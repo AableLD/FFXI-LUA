@@ -516,7 +516,7 @@ function init_gear_sets()
     left_ear="Hoxne Earring",
     right_ear="Moonshade Earring",
     left_ring="Dingir Ring",
-    right_ring="Archon Ring",
+    right_ring="Cornelia's Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 

@@ -31,7 +31,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Sworn Brais",
     feet="Sworn Sabatons",
-    neck="Warder's Charm +1",
+    neck="Bathy Choker +1",
     waist="Carrier's Sash",
     left_ear="Alabaster Earring",
     right_ear="Infused Earring",
