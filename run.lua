@@ -768,7 +768,19 @@ function aftercast(spell,act)
 	end
 	
 	if player.status == 'Engaged' and buffactive['Battuta'] then
-		equip{feet="Futhark Boots +4",hands="Turms Mittens +1"}
+		equip{ammo="Yamarang",
+    head="Nyame Helm",
+    body="Erilaz Surcoat +2",
+    hands="Turms Mittens +1",
+    legs="Eri. Leg Guards +3",
+    feet="Turms Leggings +1",
+    neck={ name="Futhark Torque +1", augments={'Path: A',}},
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
+    left_ring="Moonlight Ring",
+    right_ring="Murky Ring",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
 	end	
 
 	if player.status == 'Engaged' and buffactive['Reive Mark'] then
@@ -778,7 +790,19 @@ end
 
 function buff_change(new,old)
 	if buffactive['Battuta'] then
-		equip{feet="Futhark Boots +4",hands="Turms Mittens +1",back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
+		equip{ammo="Yamarang",
+    head="Nyame Helm",
+    body="Erilaz Surcoat +2",
+    hands="Turms Mittens +1",
+    legs="Eri. Leg Guards +3",
+    feet="Turms Leggings +1",
+    neck={ name="Futhark Torque +1", augments={'Path: A',}},
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
+    left_ring="Moonlight Ring",
+    right_ring="Murky Ring",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
 	end
 
 	if buffactive['Embolden'] then
@@ -802,7 +826,19 @@ function status_change(new,old)
 	end
 
 	if buffactive['Battuta'] and new == 'Engaged' then
-		equip{feet="Futhark Boots +4",hands="Turms Mittens +1", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
+		equip{ammo="Yamarang",
+    head="Nyame Helm",
+    body="Erilaz Surcoat +2",
+    hands="Turms Mittens +1",
+    legs="Eri. Leg Guards +3",
+    feet="Turms Leggings +1",
+    neck={ name="Futhark Torque +1", augments={'Path: A',}},
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
+    left_ring="Moonlight Ring",
+    right_ring="Murky Ring",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
 	end
 	
 	--if (buffactive['aftermath: lv.3'] and os.clock() - AM_start >= 160) then
