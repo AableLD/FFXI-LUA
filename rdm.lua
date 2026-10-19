@@ -716,7 +716,7 @@ sets.midcast.Refresh = sets.midcast.Refresh
     hands="Nyame Gauntlets",
     legs="Sworn Brais",
     feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
-    neck="Warder's Charm +1",
+    neck="Nodens gorget",
     waist="Carrier's Sash",
     left_ear="Alabaster Earring",
     right_ear="Mendi. Earring",

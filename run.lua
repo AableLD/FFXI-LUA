@@ -93,7 +93,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back="Null Shawl",}
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
     
 	sets.TP.MAcc = set_combine(sets.TP.Reg,{hands="Meghanada Gloves +2",legs="Meghanada Chausses +2",back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}})
 	
@@ -110,7 +110,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back="Null Shawl",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
 }
 	
 	sets.TP.PDT = {
@@ -126,7 +126,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back="Null Shawl",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
 }	
 	sets.TP.PDTA ={
      ammo="Yamarang",
@@ -141,7 +141,7 @@ ammo="Yamarang",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back="Null Shawl",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
 }
 	
 	
@@ -780,7 +780,7 @@ function aftercast(spell,act)
     right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
 	end	
 
 	if player.status == 'Engaged' and buffactive['Reive Mark'] then
@@ -802,7 +802,7 @@ function buff_change(new,old)
     right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
 	end
 
 	if buffactive['Embolden'] then
@@ -838,7 +838,7 @@ function status_change(new,old)
     right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
     left_ring="Moonlight Ring",
     right_ring="Murky Ring",
-    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},}
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
 	end
 	
 	--if (buffactive['aftermath: lv.3'] and os.clock() - AM_start >= 160) then
