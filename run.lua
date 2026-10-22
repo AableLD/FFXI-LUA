@@ -46,16 +46,16 @@ end
 	-- JA Sets for Precast Function --	
 	sets.JA = {}
 	
-	sets.JA['Elemental Sforzo'] = {body="Futhark Coat +3",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
-	sets.JA['Vallation'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +3",feet="Erilaz greaves +2",back="Ogma's Cape"}
-	sets.JA['Valiance'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +3",feet="Erilaz greaves +2",back="Ogma's Cape"}
+	sets.JA['Elemental Sforzo'] = {body="Futhark Coat +3",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +3"}
+	sets.JA['Vallation'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +3",feet="Erilaz greaves +3",back="Ogma's Cape"}
+	sets.JA['Valiance'] = {body="Runeist's Coat +4",hands="Kurys gloves",legs="Futhark Trousers +3",feet="Erilaz greaves +3",back="Ogma's Cape"}
 	sets.JA['Pflug'] = {feet="Runeist Bottes",hands="Kurys gloves"}
-	sets.JA['Swordplay'] = {hands="Futhark Mitons +1",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
-	sets.JA['Gambit'] = {hands="Runeist's Mitons +2",feet="Erilaz greaves +2"}
-	sets.JA['Liement'] = {body="Futhark Coat +3",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +2"}
+	sets.JA['Swordplay'] = {hands="Futhark Mitons +1",legs="Erilaz leg guards +3",feet="Erilaz greaves +3"}
+	sets.JA['Gambit'] = {hands="Runeist's Mitons +2",feet="Erilaz greaves +3"}
+	sets.JA['Liement'] = {body="Futhark Coat +3",hands="Kurys gloves",legs="Erilaz leg guards +3",feet="Erilaz greaves +3"}
 	sets.JA['Battuta'] = {head="Fu. Bandeau +4",hands="Kurys gloves",legs="Erilaz leg guards +3"}
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
-	sets.JA['Vivacious Pulse'] = {head="Erilaz Galea +2",hands="Kurys gloves",legs="Runeist Trousers",ring2="Globidonta Ring",feet="Erilaz greaves +2"}
+	sets.JA['Vivacious Pulse'] = {head="Erilaz Galea +2",hands="Kurys gloves",legs="Runeist Trousers",ring2="Globidonta Ring",feet="Erilaz greaves +3"}
 	sets.JA['Rayke'] = {feet="Futhark Boots +4",hands="Kurys gloves"}
 	
 	sets.JA['Lunge'] = {ammo="Pemphredo Tathlum",
@@ -86,7 +86,7 @@ ammo="Yamarang",
     body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    feet="Erilaz greaves +3",
     neck="Null Loop",
     waist="Sailfi Belt +1",
     left_ear="Alabaster Earring",
@@ -103,7 +103,7 @@ ammo="Yamarang",
     body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    feet="Erilaz greaves +3",
     neck="Null Loop",
     waist="Sailfi Belt +1",
     left_ear="Alabaster Earring",
@@ -119,7 +119,7 @@ ammo="Yamarang",
     body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    feet="Erilaz greaves +3",
     neck="Null Loop",
     waist="Sailfi Belt +1",
     left_ear="Alabaster Earring",
@@ -134,7 +134,7 @@ ammo="Yamarang",
     body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    feet="Erilaz greaves +3",
     neck="Null Loop",
     waist="Sailfi Belt +1",
     left_ear="Alabaster Earring",
@@ -185,7 +185,7 @@ ammo="Yamarang",
     body="Runeist Coat +4",
     hands="Erilaz Gauntlets +2",
     legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    feet="Erilaz greaves +3",
     neck="Rep. Plat. Medal",
     waist="Engraved Belt",
     left_ear="Alabaster Earring",
@@ -467,7 +467,7 @@ ammo="Staunch Tathlum +1",
     body="Erilaz Surcoat +2",
     hands="Stone Mufflers",
     legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    feet="Erilaz greaves +3",
     neck="Stone Gorget",
     waist="Siegel Sash",
     left_ear="Earthcry Earring",
@@ -482,7 +482,7 @@ ammo="Staunch Tathlum +1",
     body="Erilaz Surcoat +2",
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
     legs="Eri. Leg Guards +3",
-    feet="Erilaz Greaves +2",
+    feet="Erilaz greaves +3",
     neck="Voltsurge Torque",
     waist="Cornelia's Belt",
     left_ear="Loquac. Earring",
@@ -663,7 +663,7 @@ function midcast(spell,act)
 	end
 	
 	if spell.english == 'Flash' then
-		equip(sets.precast.FC.Divine,{legs="Eri. Leg Guards +3", feet="Erilaz Greaves +2", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
+		equip(sets.precast.FC.Divine,{legs="Eri. Leg Guards +3", feet="Erilaz greaves +3", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
 	end
 
 	if spell.english == 'Regen IV' then
@@ -684,7 +684,7 @@ function midcast(spell,act)
 	
 	if spell.type == 'JobAbility' then
 		if sets.JA[spell.english] then
-			equip(sets.JA[spell.english], {legs="Eri. Leg Guards +3", feet="Erilaz Greaves +2", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
+			equip(sets.JA[spell.english], {legs="Eri. Leg Guards +3", feet="Erilaz greaves +3", back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+10','Enmity+10','Spell interruption rate down-10%',}},})
 		end
 	end
 	
