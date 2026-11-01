@@ -106,7 +106,7 @@ function init_gear_sets()
     -- AF/Relic/Empy Setup
     --------------------------------------
     -- Start Artifact
-    Geomancy_Head = "geomancy Galero"    
+    Geomancy_Head = "Geomancy Galero"    
     Geomancy_Body = "Geomancy Tunic +2"
     Geomancy_Hands = "Geomancy Mitaines +2"
     Geomancy_Legs = "Geomancy Pants +2"
@@ -115,9 +115,9 @@ function init_gear_sets()
     -- Start Relic
     Bagua_Head = "Bagua Galero"
     Bagua_Body = "Bagua Tunic"
-    Bagua_Hands = "Bagua Mitaines"
+    Bagua_Hands = "Bagua Mitaines +3"
     Bagua_Legs = "Bagua Pants +1"
-    Bagua_Feet = "Bagua Sandals +1"
+    Bagua_Feet = "Bagua Sandals +3"
     -- End Relic (Other pieces on slip)
     -- Start Empy
     Azimuth_Head = "Azimuth Hood +2"
@@ -225,7 +225,7 @@ function init_gear_sets()
         head=Azimuth_Head, 
         neck="Bagua Charm +1",
         ear1="Malignance Earring",
-        ring1="Fortified Ring", -- Used for DT
+        ring1="Defending Ring", -- Used for DT
         ring2="Murky Ring", -- Used for DT
         hands=Geomancy_Hands, 
         body="Vedic Coat", -- Used for conserve MP
@@ -265,7 +265,7 @@ function init_gear_sets()
         neck="Sibyl Scarf",
         -- neck="Null Loop",
         ear1="Malignance Earring",
-        ear2=Azimuth_Earring,
+        ear2="Regal Earring",
         body=Azimuth_Body,
         hands=Azimuth_Hands, 
         ring1="Freke Ring",
@@ -277,7 +277,7 @@ function init_gear_sets()
     }
 
     sets.magic_burst = set_combine(sets.midcast['Elemental Magic'], {
-        -- hands="Agwu's Gages",
+        -- hands="Bagua Mitaines +3",
         ring1="Mujin Band",
     })
 
@@ -413,7 +413,7 @@ function init_gear_sets()
     sets.idle = {
         main="Bolelabunga", 
 	sub="Genmei Shield",
-	back=Pet_Cape,
+	back="Null Shawl",
         range="Dunna",
     head="Azimuth Hood +2",
     body="Azimuth Coat +2",
@@ -421,7 +421,7 @@ function init_gear_sets()
     legs="Azimuth Tights +2",
     feet="Azimuth Gaiters +2",
     neck="Bathy Choker +1",
-    waist="Null Belt",
+    waist="Carrier's Sash",
     left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Damage taken-3%',}},
     left_ring="Murky Ring",
@@ -435,9 +435,9 @@ function init_gear_sets()
     range="Dunna",
     head="Azimuth Hood +2",
     body="Azimuth Coat +2",
-    hands="Geo. Mitaines +2",
+    hands="Geo. Mitaines +3",
     legs="Nyame Flanchard",
-    feet="Bagua Sandals +1",
+    feet="Bagua Sandals +3",
     neck="Null Loop",
     waist="Isa Belt",
     left_ear="Alabaster Earring",
@@ -458,7 +458,7 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-        main="Maxentius",
+        main="Idris",
         neck="Null Loop",
         ear1="Alabaster Earring",
         ear2="Crepuscular Earring",
