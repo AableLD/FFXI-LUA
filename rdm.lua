@@ -709,7 +709,7 @@ sets.midcast.Refresh = sets.midcast.Refresh
 
     sets.midcast.Cure = {
     main="Daybreak",
-    sub="Sacro Bulwark",
+    sub="Thuellaic ecu +1",
     ammo="Staunch Tathlum +1",
     head={ name="Kaykaus Mitra +1", augments={'MP+80','Spell interruption rate down +12%','"Cure" spellcasting time -7%',}},
     body="Lethargy Sayon +3",

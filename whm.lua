@@ -50,7 +50,7 @@ function init_gear_sets()
     neck="Voltsurge Torque",
     waist="Witful Belt",
     left_ear="Malignance Earring",
-    right_ear="Loquac. Earring",
+    right_ear="Etiolation Earring",
     left_ring="Kishar Ring",
     right_ring="Lebeche Ring",
     back="Alaunus's Cape",
@@ -300,7 +300,7 @@ sets.midcast['Enhancing Magic'] = {
     sub="Ammurapi Shield",
     ammo="Staunch Tathlum +1",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
-    body="Ebers Bliaut +3",
+    body="Telchine Chasuble",
     hands="Dynasty Mitts",
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
     feet="Theo. Duckbills +3",
@@ -312,6 +312,9 @@ sets.midcast['Enhancing Magic'] = {
     right_ring="Defending Ring",
     back="Solemnity Cape",
 }
+
+
+    sets.midcast["Haste"] = sets.midcast['Enhancing Magic']
 
 
     sets.midcast.Cure = {

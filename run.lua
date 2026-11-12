@@ -80,7 +80,6 @@ end
 	TP_index = 1
 	
 	sets.TP.Reg = {
-    sub="Utu Grip",
 ammo="Yamarang",
     head="Fu. Bandeau +4",
     body="Runeist Coat +4",

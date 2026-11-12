@@ -120,7 +120,7 @@ function init_gear_sets()
     Bagua_Feet = "Bagua Sandals +3"
     -- End Relic (Other pieces on slip)
     -- Start Empy
-    Azimuth_Head = "Azimuth Hood +2"
+    Azimuth_Head = "Azimuth Hood +3"
     Azimuth_Body = "Azimuth Coat +2"
     Azimuth_Hands = "Azimuth Gloves +2"
     Azimuth_Legs = "Azimuth Tights +2"
@@ -138,7 +138,7 @@ function init_gear_sets()
     --------------------------------------
     sets.DT = {
     range="Dunna",
-    head="Azimuth Hood +2",
+    head="Azimuth Hood +3",
     body="Azimuth Coat +2",
     hands="Azimuth Gloves +2",
     legs="Azimuth Tights +2",
@@ -415,7 +415,7 @@ function init_gear_sets()
 	sub="Genmei Shield",
 	back="Null Shawl",
         range="Dunna",
-    head="Azimuth Hood +2",
+    head="Azimuth Hood +3",
     body="Azimuth Coat +2",
     hands="Azimuth Gloves +2",
     legs="Azimuth Tights +2",
@@ -433,12 +433,12 @@ function init_gear_sets()
         main="Idris",
     sub="Genmei Shield",
     range="Dunna",
-    head="Azimuth Hood +2",
+    head="Azimuth Hood +3",
     body="Azimuth Coat +2",
-    hands="Geo. Mitaines +3",
+    hands="Geo. Mitaines +2",
     legs="Nyame Flanchard",
     feet="Bagua Sandals +3",
-    neck="Null Loop",
+    neck="Bagua Charm +1",
     waist="Isa Belt",
     left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Damage taken-3%',}},
